@@ -1,0 +1,455 @@
+{
+    "game_name":"Eagle Leader",
+    "random_squadron_so" : {"s":6, "m":12, "l":18},
+    "sets" : [
+        {
+            "name": "Eagle Leader",
+            "aircraft": [
+                {
+                    "name":"F-15E Strike Eagle",
+                    "force":"USAF",
+                    "year_start":1989,
+                    "year_end":9999,
+                    "so":{"s":-4, "m":-8, "l":-12},
+                    "pilots" : ["Sizzler", "SWAT","Mudrock","Omega","Skimble","Homer","Wrecker","Boss","Sunbeam","Disco","Padge","Hogg","Soth"]
+                },
+                {
+                    "name":"F-15C Eagle",
+                    "force":"USAF",
+                    "year_start":1976,
+                    "year_end":9999,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Bun Bun", "Paia","VD","Craigs","G-Cube","Graphite","Waldo","Rondo","Chimp","Gucci","Weasel","Cowboy"]
+                },
+                {
+                    "name": "F-111C Aardvark",
+                    "force": "Australian Air Force",
+                    "year_start": 1967,
+                    "year_end": 1996,
+                    "so": {"s":-3, "m":-6, "l":-9},
+                    "pilots" : ["Rika", "Verco", "Hanc"]
+                },
+                {
+                    "name":"F-111F Aardvark",
+                    "force":"USAF",
+                    "year_start":1967,
+                    "year_end":1996,
+                    "so":{"s":-3, "m":-6, "l":-9},
+                    "pilots" : ["Ringo", "Mirch","Honey","Goon","Highlander","Pancho (Gringo)"]
+
+                },
+                {
+                    "name":"EF-111 Raven",
+                    "force":"USAF",
+                    "year_start":1983,
+                    "year_end":1997,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Wizard", "Druid","Rogue"]
+                },
+                {
+                    "name":"F-16C Fighting Falcon",
+                    "force":"USAF",
+                    "year_start":1978,
+                    "year_end":9999,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Alamo", "Frenchy","Speedy","Bishop","Stool","Cuffs"]
+                },
+                {
+                    "name":"A-4K Kahu",
+                    "force":"New Zealand Air Force",
+                    "year_start":1986,
+                    "year_end":2010,
+                    "so":{"s":3, "m":6, "l":9},
+                    "pilots" : ["Urban", "Darby","Jackson"]
+                },
+                {
+                    "name":"A-7D Corsair II",
+                    "force":"Air National Guard",
+                    "year_start":1970,
+                    "year_end":1991,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Tuco", "Queso","Slack","Boxer","Slim","Smoker"]
+                },
+                {
+                    "name":"Tornado GR1.A",
+                    "force":"RAF",
+                    "year_start":1979,
+                    "year_end":2019,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Orwell", "Kemp","Raines"]
+                },
+                {
+                    "name":"F-16 ADF",
+                    "force":"Air National Guard",
+                    "year_start":1989,
+                    "year_end":2007,
+                    "so":{"s":2, "m":4, "l":6},
+                    "pilots" : ["Irish", "Gopher","Buckeye","Gator","Tarheel","Longhorn"]
+
+                },
+                {
+                    "name":"F-15J Eagle",
+                    "force":"Japan Air Self-Defense Force",
+                    "year_start":1981,
+                    "year_end":9999,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Morita", "Kanban","Fujiwara"]
+                },
+                {
+                    "name":"CF-18 Hornet",
+                    "force":"Canadian Air Force",
+                    "year_start":1982,
+                    "year_end":9999,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Laflamme", "Hanson","Saunders"]
+                },
+                {
+                    "name":"F-4G Wild Weasel V",
+                    "force":"USAF",
+                    "year_start":1978,
+                    "year_end":1996,
+                    "so":{"s":3, "m":6, "l":9},
+                    "pilots" : ["Scorpio","Duo","Turkey","Cleve","Tex","Screamer"]
+                }
+
+            ]
+        },
+        {
+            "name": "Expansion #1 - Luftwaffe and RAF",
+            "aircraft": [
+                {
+                    "name": "F-104G",
+                    "force": "Luftwaffe",
+                    "year_start": 1960,
+                    "year_end": 1987,
+                    "so": {"s":4, "m":8, "l":12},
+                    "pilots" : ["Koenig", "Meyer"]
+                },
+                {
+                    "name":"Phantom F4F",
+                    "force":"Luftwaffe",
+                    "year_start":1973,
+                    "year_end":2013,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Spiegel", "Galland"]
+                },
+                {
+                    "name":"Tornado IDS",
+                    "force":"Luftwaffe",
+                    "year_start":1979,
+                    "year_end":9999,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Altshue", "Metzger"]
+                },
+                {
+                    "name":"SEPECAT Jaguar",
+                    "force":"RAF",
+                    "year_start":1974,
+                    "year_end":2006,
+                    "so":{"s":2, "m":4, "l":6},
+                    "pilots" : ["Kent", "O'Brien","Page"]
+                },
+                {
+                    "name":"Tornado F1/3 (ADV)",
+                    "force":"RAF",
+                    "year_start":1981,
+                    "year_end":2011,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Seagrave", "Ashcroft","MacLeod"]
+                },
+                {
+                    "name":"Phantom FGR Mk2",
+                    "force":"RAF",
+                    "year_start":1969,
+                    "year_end":1994,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Jones", "Chang","Moray"]
+                },
+                {
+                    "name":"Tornado GR1/3",
+                    "force":"RAF",
+                    "year_start":1979,
+                    "year_end":2019,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Lewis", "Christie","Keats"]
+                }
+            ]
+        },
+        {
+            "name": "Expansion #2 - Hellenic Air Force",
+            "aircraft": [
+                {
+                    "name": "F-4E Phantom II",
+                    "force": "Hellenic Air Force",
+                    "year_start": 1975,
+                    "year_end": 9999,
+                    "so": {"s":0, "m":0, "l":0},
+                    "pilots" : ["Polis", "Metaxas","Simiadis"]
+                },
+                {
+                    "name": "F-102 Delta Dagger",
+                    "force": "Hellenic Air Force",
+                    "year_start": 1969,
+                    "year_end": 1977,
+                    "so": {"s":5, "m":10, "l":15},
+                    "pilots" : ["Lazapoulos", "Stasinopoulos"]
+                },
+                {
+                    "name": "F-16C Falcon",
+                    "force": "Hellenic Air Force",
+                    "year_start": 1989,
+                    "year_end": 9999,
+                    "so": {"s":0, "m":0, "l":0},
+                    "pilots" : ["Bouldis", "Katehos","Anastasopoulous"]
+                },
+                {
+                    "name": "A-7H Corsair II",
+                    "force": "Hellenic Air Force",
+                    "year_start": 1975,
+                    "year_end": 2011,
+                    "so": {"s":0, "m":0, "l":0},
+                    "pilots" : ["Anagilis", "Makrotsis","Choconakis"]
+                },
+                {
+                    "name": "F-5 Tiger II",
+                    "force": "Hellenic Air Force",
+                    "year_start": 1965,
+                    "year_end": 2001,
+                    "so": {"s":4, "m":8, "l":10},
+                    "pilots" : ["Alexandros", "Galanis","Pappanastos"]
+                }
+            ]
+        },
+        {
+            "name": "Expansion #3 - Italian Air Force",
+            "aircraft": [
+                {
+                    "name": "G.91Y",
+                    "force": "Italian Air Force",
+                    "year_start": 1971,
+                    "year_end": 1994,
+                    "so": {"s":5, "m":10, "l":15},
+                    "pilots" : ["Fiore", "Crosta","Caponera"]
+                },
+                {
+                    "name":"G.91",
+                    "force":"Italian Air Force",
+                    "year_start":1959,
+                    "year_end":1995,
+                    "so":{"s":6, "m":12, "l":18},
+                    "pilots" : ["Nicotera", "Piacentini","Scarpelli"]
+                },
+                {
+                    "name":"F-104S",
+                    "force":"Italian Air Force",
+                    "year_start":1966,
+                    "year_end":2005,
+                    "so":{"s":4, "m":8, "l":10},
+                    "pilots" : ["Lovera", "Velardi","Andreozzi"]
+                },
+                {
+                    "name":"Tornado IDS",
+                    "force":"Italian Air Force",
+                    "year_start":1975,
+                    "year_end":9999,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Luca", "Spinosa","Weitze"]
+                },
+                {
+                    "name":"AMX A-11Bs",
+                    "force":"Italian Air Force",
+                    "year_start":1989,
+                    "year_end":9999,
+                    "so":{"s":4, "m":8, "l":10},
+                    "pilots" : ["Mangiarancina", "Gaultieri","Fiorella"]
+                }
+            ]
+        },
+        {
+            "name": "Expansion #5 - Minor NATO",
+            "aircraft":[
+                {
+                    "name":"F-4E Phantom II",
+                    "force":"Turkish Air Force",
+                    "year_start": 1973,
+                    "year_end":9999,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Özil", "Kaya"]
+                },
+                {
+                    "name":"F-16C Falcon",
+                    "force":"Netherlands Air Force",
+                    "year_start": 1979,
+                    "year_end":9999,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Van Pelt", "Strijker","Hoekstra"]
+                },
+                {
+                    "name":"Mirage 5BA",
+                    "force":"Belgian Air Force",
+                    "year_start": 1968,
+                    "year_end":1989,
+                    "so":{"s":2, "m":4, "l":6},
+                    "pilots" : ["Looper", "Bogaert"]
+                }
+                ,
+                {
+                    "name":"A-7P Corsair II",
+                    "force":"Portuguese Air Force",
+                    "year_start": 1981,
+                    "year_end":1999,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Pacheco", "Silva"]
+                },
+                {
+                    "name":"F-5 Tiger II",
+                    "force":"Norwegian Air Force",
+                    "year_start": 1965,
+                    "year_end":2000,
+                    "so":{"s":4, "m":8, "l":12},
+                    "pilots" : ["Ness", "Haugen","Calland"]
+                },
+                {
+                    "name":"EF/A-18 Hornet",
+                    "force":"Spanish Air Force",
+                    "year_start": 1986,
+                    "year_end":9999,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Cortes", "Reyes","Machado"]
+                },
+                {
+                    "name":"J-35 Draken",
+                    "force":"Royal Danish Air Force",
+                    "year_start": 1970,
+                    "year_end":1990,
+                    "so":{"s":3, "m":6, "l":9},
+                    "pilots" : ["Soren", "Jeppsen", "Thorman"]
+                }
+            ]
+        },
+        {
+            "name": "Expansion #7 - Experimental Aircraft",
+            "aircraft": [
+                {
+                    "name": "F-20 Tigershark",
+                    "force": "USAF",
+                    "year_start": 1982,
+                    "year_end": 9999,
+                    "so": {"s":-3, "m":-6, "l":-9},
+                    "pilots" : ["Docfather", "Lust"]
+                },
+                {
+                    "name": "F-15 STOL",
+                    "force": "USAF",
+                    "year_start": 1977,
+                    "year_end": 2009,
+                    "so": {"s":-3, "m":-6, "l":-9},
+                    "pilots" : ["Megahit", "Envy"]
+                },
+                { 
+                    "name": "F-16XL",
+                    "force": "USAF",
+                    "year_start": 1982,
+                    "year_end": 2009,
+                    "so": {"s":-2, "m":-4, "l":-6},
+                    "pilots" : ["Wrath", "Trooper"]
+                },
+                {
+                    "name": "Mirage G",
+                    "force": "French Air Force",
+                    "year_start": 1967,
+                    "year_end": 1991,
+                    "so": {"s":-3, "m":-6, "l":-9},
+                    "pilots" : ["Flauros", "Redbeard"]
+                },
+                {
+                    "name": "AST-21 Tomcat (ASF-14)",
+                    "force": "USAF",
+                    "year_start": 1985,
+                    "year_end": 2000,
+                    "so": {"s":-2, "m":-4, "l":-6},
+                    "pilots" : ["Oedi", "Glutton"]
+                },
+                {
+                    "name": "X-31",
+                    "force": "Luftwaffe",
+                    "year_start": 1985,
+                    "year_end": 2000,
+                    "so": {"s":-3, "m":-6, "l":-9},
+                    "pilots" : ["Greed", "Metzger"]
+                },
+                {
+                    "name":"F-29",
+                    "force":"USAF",
+                    "year_start":1984,
+                    "year_end":1991,
+                    "so":{"s":-3, "m":-6, "l":-9},
+                    "pilots" : ["Pride", "Prejudice"]
+                },
+                {
+                    "name":"F-18 HARV",
+                    "force":"USAF",
+                    "year_start":1987,
+                    "year_end":1996,
+                    "so":{"s":-2, "m":-4, "l":-6},
+                    "pilots" : ["Sloth", "Finch"]
+                },
+                {
+                    "name":"F-21 Lion",
+                    "force":"USAF",
+                    "year_start":1985,
+                    "year_end":9999,
+                    "so":{"s":-1, "m":-2, "l":-3},
+                    "pilots" : ["Gehenna", "Shedim"]
+                }                
+            ]
+        },
+        {
+            "name": "Expansion #8 - Japan Air Self-Defense Force",
+            "aircraft":[
+                {
+                    "name":"F-104J",
+                    "force": "Japan Air Self-Defense Force",
+                    "year_start":1966,
+                    "year_end":1986,
+                    "so":{"s":5, "m":10, "l":15},
+                    "pilots" : ["Moto", "Yamashita","Uchiyama"]
+                },
+                {
+                    "name":"F-4EJ",
+                    "force": "Japan Air Self-Defense Force",
+                    "year_start":1971,
+                    "year_end":2021,
+                    "so":{"s":2, "m":4, "l":6},
+                    "pilots" : ["Ohtani", "Sawa","Tominosuke"]
+                },
+                {
+                    "name":"F-1",
+                    "force": "Japan Air Self-Defense Force",
+                    "year_start":1978,
+                    "year_end":2006,
+                    "so":{"s":2, "m":4, "l":6},
+                    "pilots" : ["Yoshida", "Morimoto","Arakawa"]
+                },
+                {
+                    "name":"F-15J",
+                    "force":"Japan Air Self-Defense Force",
+                    "year_start":1981,
+                    "year_end":9999,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Hoshino", "Tanaka","Shimada"]
+                },
+                {
+                    "name":"F-4EJ Kai",
+                    "force": "Japan Air Self-Defense Force",
+                    "year_start":1989,
+                    "year_end":2021,
+                    "so":{"s":2, "m":4, "l":6},
+                    "pilots" : ["Okita", "Takeda","Kusinagi"]
+                }
+                
+            ]
+        }
+]
+
+}
