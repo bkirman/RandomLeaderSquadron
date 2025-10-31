@@ -9,29 +9,37 @@
 <body>
     <header>
         <h1>Air Leader Random Squadron Selection</h1>
+        <p>By <a href="https://ben.kirman.org">Ben Kirman</a>. <a href="https://github.com/bkirman/RandomLeaderSquadron">Source Code</a>.</p>
     </header>
 
     <main>
         <div id="game">
             <h2>Which Game?</h2>
+            <p>More coming soon!</p>
             <select id="game_select" name="game_select">
                 <option value="">  </option>
                 <option value="eagle_leader">Eagle Leader</option>
             </select>
+            <button id="selected_game">Next</button>
         </div>
 
         <div id="expansions">
             <h2>Which Expansions?</h2>
+            <p>Select all that you own. Campaign restrictions can be applied later.</p>
             
             <fieldset id="expansion_options">
             </fieldset>
+            <button id="selected_expansions">Next</button>
         </div>
         <div id="year">
             <h2>Which Year?</h2>
+            <p>The year of the campaign limits aircraft availability.</p>
             <input type="number" id="year_input" name="year_input" min="1900" max="2100" step="1">
+            <button id="selected_year">Next</button>
         </div>
         <div id="length">
             <h2>How Long?</h2>
+            <p>The campaign length affects squadron size and special operation costs/gains.</p>
             <select id="length_select" name="length_select">
                 <option value="">  </option>
                 <option value="short">Short</option>
@@ -39,14 +47,41 @@
                 <option value="long">Long</option>
                 
             </select>
+            <button id="selected_length">Next</button>
         </div>
         <div id="forces">
             <h2>Which Forces?</h2>
+            <p>Apply campaign restrictions or personal preferences.</p>
+            <fieldset id="force_options">
+            </fieldset>
+            <button id="selected_forces">Next</button>
             
         </div>
         <div id="aircraft">
             <h2>Which Aircraft?</h2>
-            These are all included based on your selections so far:
+            <p>Apply campaign restrictions or personal preferences.</p>
+            <fieldset id="aircraft_options">
+            </fieldset>
+            <button id="selected_aircraft">Finish</button>
+        </div>
+        <div id="results">
+            <h2>Your Random Squadron</h2>
+            <table id="results_table">
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Pilot</th>
+                        <th>Aircraft</th>
+                        <th>Force</th>
+                        <th>SOs</th>
+                        <th>Re-roll</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+
+            Pilot SOs (<span id="pilot_sos">0</span>) + Random Squadron Rule SOs (<span id="rules_sos">0</span>) = <span id="total_sos">0</span>
         </div>
 
 

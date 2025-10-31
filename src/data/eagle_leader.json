@@ -271,6 +271,52 @@
             ]
         },
         {
+            "name": "Expansion #4 - French Air Force",
+            "aircraft":[
+                {
+                    "name":"Mirage F1C",
+                    "force":"French Air Force",
+                    "year_start":1973,
+                    "year_end":2014,
+                    "so":{"s":-1, "m":-2, "l":-3},
+                    "pilots" : ["Laurent", "Duval","Moreau","Bonneau"]
+                },
+                {
+                    "name":"Mirage 2000C",
+                    "force":"French Air Force",
+                    "year_start":1983,
+                    "year_end":2022,
+                    "so":{"s":-1, "m":-2, "l":-3},
+                    "pilots" : ["Roux", "Pomeroy","LeBlanc","Wenger"]
+                },
+                {
+                    "name":"SEPECAT Jaguar",
+                    "force":"French Air Force",
+                    "year_start":1973,
+                    "year_end":2005,
+                    "so":{"s":1, "m":2, "l":3},
+                    "pilots" : ["Boucher", "LeMay","Tremblay","Camus"]
+                },
+                {
+                    "name":"Mirage IIIE",
+                    "force":"French Air Force",
+                    "year_start":1961,
+                    "year_end":1994,
+                    "so":{"s":2, "m":4, "l":6},
+                    "pilots" : ["Verne", "Giroud","LeChance"]
+                },
+                {
+                    "name":"Mirage 5",
+                    "force":"French Air Force",
+                    "year_start":1967,
+                    "year_end":1994,
+                    "so":{"s":2, "m":4, "l":6},
+                    "pilots" : ["Sidi", "Duquense","Deschamps"]
+                }
+
+            ]
+        },
+        {
             "name": "Expansion #5 - Minor NATO",
             "aircraft":[
                 {

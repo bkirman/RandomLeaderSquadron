@@ -12,6 +12,8 @@ However I wanted to make a version of this tool that was:
 - Allows 'nudging' criteria and final selection (balance squad, eliminate specific aircraft)
 - Focussed on year instead of campaigns (to support custom campaigns)
 
+Uses the Orbitron font (OFL)
+
 ## Potential future features (not immediately planned)
 - Support for more Leader games (even non-Air leader, where it makes sense)
 - Printable squadron sheets (but that requires data on promotion)
@@ -21,3 +23,9 @@ However I wanted to make a version of this tool that was:
 
 - First I am working with Eagle Leader because it is the one I want to play and I'd rather write a whole web app than shuffle and re-sort all those pilots!
 - Data principle: SO is positive for gains, negative for costs
+
+
+## To fix
+- Error handling where there are too few pilots in the pool
+- better button styling
+- bsky link

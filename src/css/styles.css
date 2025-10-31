@@ -5,6 +5,13 @@
     box-sizing: border-box;
 }
 
+/* Font import */
+@font-face {
+    font-family: 'Orbitron-Regular';
+    src: url('../assets/Orbitron-Regular.woff2') format('woff2'),
+        url('../assets/Orbitron-Regular.ttf') format('truetype');
+}
+
 /* Base styles */
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
@@ -13,7 +20,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    background-color: #f5f5f5;
+    background-color: #2a2d45;
 }
 
 /* Header styles */
@@ -30,6 +37,7 @@ header h1 {
     color: #2c3e50;
     font-size: 2.5rem;
     font-weight: 600;
+    font-family: 'Orbitron-Regular', sans-serif;
 }
 
 /* Main content styles */
@@ -43,13 +51,139 @@ main {
     
 }
 
-#expansion_options label {
+label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: 500;
     
     
 }
+
+#game {
+    display: block;
+}
+
+#expansions {
+    display: none;
+}
+
+#year {
+   display: none;
+}
+
+#length {
+    display: none;
+}
+
+#forces {
+   display: none;
+}
+#aircraft {
+    display: none;
+}
+
+#results { 
+    display: none;
+    font-size:larger;
+}
+#pilot_sos {
+    font-weight: bold;
+    color: #2a2d45;
+}
+#rules_sos {
+    font-weight: bold;
+    color: #2a2d45;
+}
+#total_sos {
+    font-weight: bold;
+    font-size: x-large;
+    color: #2a2d45;
+}
+
+#results table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    margin:3em;
+}
+
+#results tr:nth-child(even) {
+    background-color: #f2f2f2;
+} 
+
+/* Table styles */
+
+th {
+    background-color: #2a2d45;
+    color: white;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.pilot_name_cell {
+    font-weight: 600;
+    padding-left: 2em;
+    font-size: larger;
+}
+
+.aircraft_cell {
+    font-style: italic;
+}
+
+.force_cell {
+    font-size: smaller;
+    
+}
+
+.so_cell {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+.reroll_cell {
+    text-align: center;
+}
+
+.newbie_cell {
+    font-size: small;
+    width: 4rem;
+    text-transform: uppercase;
+    background-color: #e8c6a3;
+}
+
+.green_cell {
+    font-size: small;
+    width: 4rem;
+    text-transform: uppercase;
+    background-color: #d4edda;
+}
+
+.average_cell {
+    font-size: small;
+    width: 4rem;
+    text-transform: uppercase;
+    background-color: #d4d5ed;
+}
+
+.skilled_cell {
+    font-size: small;
+    width: 4rem;
+    text-transform: uppercase;
+    background-color: #edcaca;
+}
+.veteran_cell {
+    font-size: small;
+    width: 4rem;
+    text-transform: uppercase;
+    background-color: #e5d4ed;
+}
+.legendary_cell {
+    font-size: small;
+    width: 4rem;
+    text-transform: uppercase;
+    background-color: #000000;
+}
+
 
 /* Footer styles */
 footer {
