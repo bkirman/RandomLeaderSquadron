@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Leader Squadron</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Air Leader Random Squadron Selection</h1>
+    </header>
+
+    <main>
+        <div id="game">
+            <h2>Which Game?</h2>
+            <select id="game_select" name="game_select">
+                <option value="">  </option>
+                <option value="eagle_leader">Eagle Leader</option>
+            </select>
+        </div>
+
+        <div id="expansions">
+            <h2>Which Expansions?</h2>
+            
+            <fieldset id="expansion_options">
+            </fieldset>
+        </div>
+        <div id="year">
+            <h2>Which Year?</h2>
+            <input type="number" id="year_input" name="year_input" min="1900" max="2100" step="1">
+        </div>
+        <div id="length">
+            <h2>How Long?</h2>
+            <select id="length_select" name="length_select">
+                <option value="">  </option>
+                <option value="short">Short</option>
+                <option value="medium">Medium</option>
+                <option value="long">Long</option>
+                
+            </select>
+        </div>
+        <div id="forces">
+            <h2>Which Forces?</h2>
+            
+        </div>
+        <div id="aircraft">
+            <h2>Which Aircraft?</h2>
+            These are all included based on your selections so far:
+        </div>
+
+
+    </main>
+
+    <footer>
+        <!-- Footer content will go here -->
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

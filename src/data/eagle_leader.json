@@ -1,6 +1,11 @@
 {
     "game_name":"Eagle Leader",
     "random_squadron_so" : {"s":6, "m":12, "l":18},
+    "squadron_ranks":{
+        "s":{"Newbie":1, "Green":2, "Average":4, "Skilled":1, "Veteran":0, "Legendary":0},
+        "m":{"Newbie":1, "Green":2, "Average":5, "Skilled":1, "Veteran":1, "Legendary":0},
+        "l":{"Newbie":1, "Green":2, "Average":6, "Skilled":2, "Veteran":1, "Legendary":0}
+    },
     "sets" : [
         {
             "name": "Eagle Leader",
