@@ -15,8 +15,6 @@ However I wanted to make a version of this tool that was:
 Built on:
 - Vanilla JS, HTML and CSS
 - Uses the Orbitron font (OFL)
-- Adjectives courtesy of <a href="https://github.com/baliw">Daniel Walton</a>
-- Animal names adapted from <a href="https://gist.github.com/borlaym/585e2e09dd6abd9b0d0a">Marton Borlay</a>
 
 ## Potential future features (not immediately planned)
 - Support for more Leader games (even non-Air leader, where it makes sense)

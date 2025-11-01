@@ -388,8 +388,9 @@ function randomAdjective() {
             })
             .then(list => {
                 if (!Array.isArray(list) || list.length === 0) return '';
-                const idx = Math.floor(Math.random() * list.length);
-                return list[idx];
+                var out = list[Math.floor(Math.random() * list.length)]
+                out = out.charAt(0).toUpperCase() + out.slice(1);
+                return out;
             })
             .catch(err => {
                 console.error('Error loading adjectives:', err);
@@ -405,11 +406,9 @@ function randomAnimal() {
         })
         .then(data => {
             if (Array.isArray(data) && data.length > 0) {
-                return data[Math.floor(Math.random() * data.length)];
-            }
-            if (data && typeof data === 'object') {
-                const vals = Object.values(data);
-                if (vals.length > 0) return vals[Math.floor(Math.random() * vals.length)];
+                var out = data[Math.floor(Math.random() * data.length)]
+                out = out.charAt(0).toUpperCase() + out.slice(1);
+                return out;
             }
             return '';
         })
