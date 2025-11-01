@@ -26,7 +26,3 @@ Built on:
 - First I am working with Eagle Leader because it is the one I want to play and I'd rather write a whole web app than shuffle and re-sort all those pilots!
 - Data principle: SO is positive for gains, negative for costs
 
-## To fix
-- Error handling where there are too few pilots in the pool
-- better button styling
-- bsky link

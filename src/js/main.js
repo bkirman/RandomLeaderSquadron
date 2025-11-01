@@ -38,31 +38,31 @@ function gameSelected() {
     
     const main = document.querySelector('main');
 
-    if (selectedGame === "eagle_leader") {
-        fetch('data/eagle_leader.json').then(response => response.json()).then(data => {
-            //console.log("Eagle Leader data loaded:", data);
-            gameData = data;
+    
+    fetch('data/'+selectedGame+'.json').then(response => response.json()).then(data => {
+        //console.log("Eagle Leader data loaded:", data);
+        gameData = data;
 
-            //populate expansion options
-            const fieldset = document.querySelector('fieldset#expansion_options');
+        //populate expansion options
+        const fieldset = document.querySelector('fieldset#expansion_options');
 
-            data.sets.forEach(set => {
-                //console.log(set.name)
-                const box = document.createElement('input');
-                box.type = 'checkbox';
-                box.name = set.name;
-                box.checked = true;
-                const label = document.createElement('label');
-                label.htmlFor = set.name;
-                
-                label.appendChild(box);
-                label.appendChild(document.createTextNode(" "+set.name));
-                fieldset.appendChild(label);
-            });      
-        }).catch(error => {
-            console.error("Error loading Eagle Leader data:", error);
-        });
-    }
+        data.sets.forEach(set => {
+            //console.log(set.name)
+            const box = document.createElement('input');
+            box.type = 'checkbox';
+            box.name = set.name;
+            box.checked = true;
+            const label = document.createElement('label');
+            label.htmlFor = set.name;
+            
+            label.appendChild(box);
+            label.appendChild(document.createTextNode(" "+set.name));
+            fieldset.appendChild(label);
+        });      
+    }).catch(error => {
+        console.error("Error loading data:", error);
+    });
+    
     document.getElementById("game").style.display = "none";
     document.getElementById("expansions").style.display = "block";
 }
@@ -198,10 +198,10 @@ function forcesSelected() {
     aircraftPool.forEach(aircraft => {
         const box = document.createElement('input');
         box.type = 'checkbox';
-        box.name = aircraft.name;
+        box.name = aircraft.name + "$"+aircraft.force;
         box.checked = true;
         const label = document.createElement('label');
-        label.htmlFor = aircraft.name;
+        label.htmlFor = aircraft.name + "$"+aircraft.force;
         
         label.appendChild(box);
         label.appendChild(document.createTextNode(" "+aircraft.name+" ("+aircraft.force+", "+aircraft.pilots.length+" pilots)"));
@@ -228,11 +228,12 @@ function aircraftSelected() {
             selectedAircraft.push(box.name);
         }
     });
-    //console.log("Selected aircraft:", selectedAircraft);
+    console.log("Selected aircraft:", selectedAircraft);
 
     pilotPool = [];
-    selectedAircraft.forEach(aircraftName => {
-        const aircraft = aircraftPool.find(a => a.name === aircraftName);
+    selectedAircraft.forEach(boxName => {
+
+        const aircraft = aircraftPool.find(a => a.name === boxName.split('$')[0] && a.force === boxName.split('$')[1]);
         if (aircraft) {
             aircraft.pilots.forEach(pilot => {
                 var pilotEntry = {pilot:pilot, aircraft:aircraft.name, force:aircraft.force, so:aircraft.so[selectedLength.charAt(0)]};
@@ -240,7 +241,7 @@ function aircraftSelected() {
             });
         }
     });
-    //console.log("Compiled pilot pool:", pilotPool);
+    console.log("Compiled pilot pool:", pilotPool);
 
     if (pilotPool.length < squadronSize) {
         document.getElementById("error").style.display = "block";
@@ -294,8 +295,7 @@ function aircraftSelected() {
                     alert("No more pilots available to select from!");
                     return;
                 }
-                //remove pilot from pool
-                pilotPool.splice(randomIndex, 1);
+                
                 //regenerate this row
                 regenerateRow(row, rankKey);
             });
@@ -324,6 +324,9 @@ function regenerateRow(row, rankKey) {
     row.cells[2].textContent = pilotEntry.aircraft;
     row.cells[3].textContent = pilotEntry.force;
     row.cells[4].textContent = pilotEntry.so;
+
+    //remove pilot from pool
+    pilotPool.splice(randomIndex, 1);
 
     generateTotalSO();
 }

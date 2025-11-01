@@ -1,0 +1,331 @@
+{
+    "game_name":"Fulcrum Leader",
+    "random_squadron_so" : {"s":6, "m":12, "l":18},
+    "squadron_ranks":{
+        "s":{"Newbie":1, "Green":2, "Average":4, "Skilled":1, "Veteran":0, "Legendary":0},
+        "m":{"Newbie":1, "Green":2, "Average":5, "Skilled":1, "Veteran":1, "Legendary":0},
+        "l":{"Newbie":1, "Green":2, "Average":6, "Skilled":2, "Veteran":1, "Legendary":0}
+    },
+    "sets" : [
+        {
+            "name": "Fulcrum Leader",
+            "aircraft": [
+                {
+                    "name":"MiG-29 Fulcrum A",
+                    "force":"USSR",
+                    "year_start":1984,
+                    "year_end":1991,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Onyx 101","Onyx 102","Onyx 103","Onyx 104","Onyx 105","Onyx 106","Onyx 107","Onyx 108","Onyx 109","Onyx 110","Onyx 111","Onyx 112"]
+                },
+                {
+                    "name":"MiG-29 Fulcrum A",
+                    "force":"Bulgaria",
+                    "year_start":1984,
+                    "year_end":1991,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Mist 1601","Mist 1602","Mist 1603"]
+                },
+                {
+                    "name":"MiG-29 Fulcrum A",
+                    "force":"Czechoslovakia",
+                    "year_start":1984,
+                    "year_end":1991,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Wolf 1501","Wolf 1502","Wolf 1503"]
+                },
+                {
+                    "name":"MiG-29 Fulcrum A",
+                    "force":"DDR",
+                    "year_start":1984,
+                    "year_end":1991,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Bolt 1301","Bolt 1302","Bolt 1303"]
+                },
+                {
+                    "name":"MiG-29 Fulcrum A",
+                    "force":"Poland",
+                    "year_start":1984,
+                    "year_end":1991,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Fable 1401","Fable 1402","Fable 1403"]
+                },
+                {
+                    "name":"MiG-29 Fulcrum A",
+                    "force":"Romania",
+                    "year_start":1984,
+                    "year_end":1991,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Silver 1701","Silver 1702","Silver 1703"]
+                },
+                {
+                    "name":"Su-24 Fencer",
+                    "force":"USSR",
+                    "year_start":1974,
+                    "year_end":1991,
+                    "so":{"s":-4, "m":-8, "l":-12},
+                    "pilots" : ["Talisman 401","Talisman 402","Talisman 403","Talisman 404","Talisman 405","Talisman 406"]
+                },
+                {
+                    "name":"MiG-27 Flogger J",
+                    "force":"USSR",
+                    "year_start":1975,
+                    "year_end":1991,
+                    "so":{"s":-1, "m":-2, "l":-3},
+                    "pilots" : ["Firebird 241","Firebird 242","Firebird 243","Firebird 244","Firebird 245","Firebird 246"]
+                },
+                {
+                    "name":"Su-17M Fitter",
+                    "force":"USSR",
+                    "year_start":1972,
+                    "year_end":1991,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Garnet 441","Garnet 442","Garnet 443","Garnet 444","Garnet 445","Garnet 446"]
+                },
+                {
+                    "name":"Tu-126 Moss",
+                    "force":"USSR",
+                    "year_start":1965,
+                    "year_end":1984,
+                    "so":{"s":-2, "m":-4, "l":-6},
+                    "pilots" : ["Scarab 801","Scarab 802"]
+                },
+                {
+                    "name":"A-50 Mainstay",
+                    "force":"USSR",
+                    "year_start":1984,
+                    "year_end":1991,
+                    "so":{"s":-2, "m":-4, "l":-6},
+                    "pilots" : ["Monocle 901","Monocle 902"]
+                },
+                {
+                    "name":"Yak-28PP Brewer-E",
+                    "force":"USSR",
+                    "year_start":1970,
+                    "year_end":1991,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Topaz 701","Topaz 702"]
+                },
+                {
+                    "name":"MiG-23ML Flogger G",
+                    "force":"USSR",
+                    "year_start":1972,
+                    "year_end":1991,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Agon 201","Agon 202","Agon 203","Agon 204","Agon 205","Agon 206"]
+                },
+                {
+                    "name":"MiG-29 Fulcrum C",
+                    "force":"USSR",
+                    "year_start":1986,
+                    "year_end":1991,
+                    "so":{"s":-2, "m":-4, "l":-6},
+                    "pilots" : ["Obsidian 141","Obsidian 142","Obsidian 143","Obsidian 144","Obsidian 145","Obsidian 146"]
+                },
+                {
+                    "name":"MiG-21bis Fishbed N",
+                    "force":"USSR",
+                    "year_start":1972,
+                    "year_end":1991,
+                    "so":{"s":1, "m":2, "l":3},
+                    "pilots" : ["Brazier 301","Brazier 302","Brazier 303","Brazier 304","Brazier 305","Brazier 306"]
+                },
+                {
+                    "name":"Su-27 Flanker",
+                    "force":"USSR",
+                    "year_start":1985,
+                    "year_end":1991,
+                    "so":{"s":-3, "m":-6, "l":-9},
+                    "pilots" : ["Sable 501","Sable 502","Sable 503","Sable 504","Sable 505","Sable 506"]
+                }
+            ]
+        },
+        {
+            "name": "Expansion #1 - Naval Aviation",
+            "aircraft": [
+                {
+                    "name":"Yak-38 Forger",
+                    "force":"USSR",
+                    "year_start":1976,
+                    "year_end":1991,
+                    "so":{"s":1, "m":2, "l":3},
+                    "pilots" : ["Apollon 1201","Apollon 1202","Apollon 1203","Apollon 1204","Apollon 1205","Apollon 1206","Apollon 1207","Apollon 1208","Apollon 1209","Apollon 1210","Apollon 1211","Apollon 1212"]
+                }
+            ]
+        },
+        {
+            "name": "Expansion #2 - Early Years",
+            "aircraft": [
+                {
+                    "name":"MiG-19 Farmer",
+                    "force":"USSR",
+                    "year_start":1955,
+                    "year_end":1974,
+                    "so":{"s":3, "m":6, "l":9},
+                    "pilots" : ["Mystic 601","Mystic 602","Mystic 603","Mystic 604","Mystic 605","Mystic 606","Mystic 607"]
+                },
+                {
+                    "name":"MiG-21F-13 Fishbed C",
+                    "force":"USSR",
+                    "year_start":1960,
+                    "year_end":1972,
+                    "so":{"s":2, "m":4, "l":6},
+                    "pilots" : ["Censer 1001","Censer 1002","Censer 1003","Censer 1004","Censer 1005","Censer 1006","Censer 1007","Censer 1008"]
+                }
+            ]
+        },
+        {
+            "name": "Expansion #3 - Warsaw Pact #1",
+            "aircraft": [
+                {
+                    "name":"MiG-23MF Flogger B",
+                    "force":"DDR",
+                    "year_start":1978,
+                    "year_end":1991,
+                    "so":{"s":1, "m":2, "l":3},
+                    "pilots" : ["Teuton 101","Teuton 102","Teuton 103","Teuton 104"]
+                },
+                {
+                    "name":"Su-22M Fitter J",
+                    "force":"Poland",
+                    "year_start":1977,
+                    "year_end":1991,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Lance 121","Lance 122","Lance 123","Lance 124"]
+                },
+                {
+                    "name":"MiG-21 PFM Fishbed F",
+                    "force":"Poland",
+                    "year_start":1968,
+                    "year_end":1991,
+                    "so":{"s":3, "m":6, "l":9},
+                    "pilots" : ["Zephyr 151","Zephyr 152","Zephyr 153","Zephyr 154"]
+                },
+                {
+                    "name":"MiG-23BN Flogger H",
+                    "force":"Czechoslovakia",
+                    "year_start":1972,
+                    "year_end":1991,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Archer 171","Archer 172","Archer 173","Archer 174"]
+                }
+            ]
+        },
+        {
+            "name": "Expansion #4 - Interceptors",
+            "aircraft": [
+                {
+                    "name":"MiG-25P/PD Foxbat E",
+                    "force":"USSR",
+                    "year_start":1972,
+                    "year_end":1991,
+                    "so":{"s":1, "m":2, "l":3},
+                    "pilots" : ["Spectre 601","Spectre 602","Spectre 603","Spectre 604","Spectre 605","Spectre 606"]
+                },
+                {
+                    "name":"MiG-31 Foxhound",
+                    "force":"USSR",
+                    "year_start":1981,
+                    "year_end":1991,
+                    "so":{"s":-3, "m":-6, "l":-9},
+                    "pilots" : ["Wraith 381","Wraith 382","Wraith 383","Wraith 384","Wraith 385","Wraith 386"]
+                }
+            ]
+        },
+        {
+            "name": "Expansion #5 - Warsaw Pact #2",
+            "aircraft": [
+                {
+                    "name":"MiG-21MF Fishbed C",
+                    "force":"Hungary",
+                    "year_start":1970,
+                    "year_end":1991,
+                    "so":{"s":2, "m":4, "l":6},
+                    "pilots" : ["Bracer 401","Bracer 402","Bracer 403","Bracer 404"]
+                },
+                {
+                    "name":"Su-22M Fitter J",
+                    "force":"Hungary",
+                    "year_start":1977,
+                    "year_end":1991,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Ringmail 441","Ringmail 442","Ringmail 443","Ringmail 444"]
+                },
+                {
+                    "name":"MiG-23BN Flogger H",
+                    "force":"Bulgaria",
+                    "year_start":1972,
+                    "year_end":1991,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Vorpal 521","Vorpal 522","Vorpal 523","Vorpal 524"]
+                },
+                {
+                    "name":"MiG-23MF Flogger B",
+                    "force":"Romania",
+                    "year_start":1978,
+                    "year_end":1991,
+                    "so":{"s":1, "m":2, "l":3},
+                    "pilots" : ["Dracul 581","Dracul 582","Dracul 583","Dracul 584"]
+                }
+            ]
+        },
+        {
+            "name": "Expansion #6 - Northwestern Edge",
+            "aircraft": [
+                {
+                    "name":"Su-24M Fencer D",
+                    "force":"USSR",
+                    "year_start":1981,
+                    "year_end":1991,
+                    "so":{"s":-4, "m":-8, "l":-12},
+                    "pilots" : ["Gauntlet 621","Gauntlet 622","Gauntlet 623","Gauntlet 624","Gauntlet 625","Gauntlet 626"]
+                },
+                {
+                    "name":"Su-27 Flanker",
+                    "force":"USSR",
+                    "year_start":1985,
+                    "year_end":1991,
+                    "so":{"s":-3, "m":-6, "l":-9},
+                    "pilots" : ["Scion 521","Scion 522","Scion 523","Scion 524","Scion 525","Scion 526"]
+                },
+                {
+                    "name":"Su-24MP Fencer F",
+                    "force":"USSR",
+                    "year_start":1983,
+                    "year_end":1991,
+                    "so":{"s":-2, "m":-4, "l":-6},
+                    "pilots" : ["Holdfast 1801","Holdfast 1802"]
+                }
+            ]
+        },
+        {
+            "name": "Expansion #7 - Far East",
+            "aircraft": [
+                {
+                    "name":"Shenyang J-6 Farmer",
+                    "force":"PLAAF",
+                    "year_start":1966,
+                    "year_end":1991,
+                    "so":{"s":2, "m":4, "l":6},
+                    "pilots" : ["Minjie 821","Minjie 822","Minjie 823","Minjie 824","Minjie 825"]
+                },
+                {
+                    "name":"Chengdu J-7 Fishcan",
+                    "force":"PLAAF",
+                    "year_start":1969,
+                    "year_end":1991,
+                    "so":{"s":1, "m":2, "l":3},
+                    "pilots" : ["Longma 851","Longma 852","Longma 853","Longma 854","Longma 855"]
+                },
+                {
+                    "name":"Nanchang Q-5 Fantan",
+                    "force":"PLAAF",
+                    "year_start":1970,
+                    "year_end":1991,
+                    "so":{"s":1, "m":2, "l":3},
+                    "pilots" : ["Feilong 881","Feilong 882","Feilong 883","Feilong 884","Feilong 885"]
+                }
+            ]
+        }
+    ]
+}
