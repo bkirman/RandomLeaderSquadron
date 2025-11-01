@@ -81,6 +81,9 @@ label {
 #aircraft {
     display: none;
 }
+#error {
+    display: none;
+}
 
 #results { 
     display: none;
@@ -140,7 +143,7 @@ th {
     padding-right: 1rem;
 }
 
-.reroll_cell {
+.action_cell {
     text-align: center;
 }
 
@@ -182,6 +185,41 @@ th {
     width: 4rem;
     text-transform: uppercase;
     background-color: #000000;
+}
+
+select {
+    font-size: large;
+    margin-top: 1em;
+    padding: 0.6em;
+    background-color: #dcdee7;
+    border: 1px solid #2a2d45;
+}
+
+select input {
+    font-size: large;
+    margin-top: 1em;
+    padding: 0.6em;
+    background-color: #dcdee7;
+}
+button {
+    font-size: large;
+    margin-top: 1em;
+    padding: 0.6em;
+    color: #f2f2f2;
+    background-color: #2a2d45;
+    border: 1px solid black;
+}
+
+input {
+    font-size: large;
+    margin-top: 1em;
+    padding: 0.6em;
+    background-color: #dcdee7;
+    border: 1px solid #2a2d45;
+}
+
+.reroll_button {
+    cursor:pointer;
 }
 
 

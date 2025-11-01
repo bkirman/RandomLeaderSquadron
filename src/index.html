@@ -9,7 +9,9 @@
 <body>
     <header>
         <h1>Air Leader Random Squadron Selection</h1>
-        <p>By <a href="https://ben.kirman.org">Ben Kirman</a>. <a href="https://github.com/bkirman/RandomLeaderSquadron">Source Code</a>.</p>
+        <p>By <a href="https://ben.kirman.org">Ben</a> <a href="https://bsky.app/profile/ben.kirman.org"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bluesky" viewBox="0 0 16 16">
+  <path d="M3.468 1.948C5.303 3.325 7.276 6.118 8 7.616c.725-1.498 2.698-4.29 4.532-5.668C13.855.955 16 .186 16 2.632c0 .489-.28 4.105-.444 4.692-.572 2.04-2.653 2.561-4.504 2.246 3.236.551 4.06 2.375 2.281 4.2-3.376 3.464-4.852-.87-5.23-1.98-.07-.204-.103-.3-.103-.218 0-.081-.033.014-.102.218-.379 1.11-1.855 5.444-5.231 1.98-1.778-1.825-.955-3.65 2.28-4.2-1.85.315-3.932-.205-4.503-2.246C.28 6.737 0 3.12 0 2.632 0 .186 2.145.955 3.468 1.948"/>
+</svg></a> 🌈 <a href="https://github.com/bkirman/RandomLeaderSquadron">Source Code</a>.</p>
     </header>
 
     <main>
@@ -17,7 +19,6 @@
             <h2>Which Game?</h2>
             <p>More coming soon!</p>
             <select id="game_select" name="game_select">
-                <option value="">  </option>
                 <option value="eagle_leader">Eagle Leader</option>
             </select>
             <button id="selected_game">Next</button>
@@ -32,13 +33,17 @@
             <button id="selected_expansions">Next</button>
         </div>
         <div id="year">
+            <p><span id="year_pool"></span> pilots available.</p>
             <h2>Which Year?</h2>
+            
             <p>The year of the campaign limits aircraft availability.</p>
             <input type="number" id="year_input" name="year_input" min="1900" max="2100" step="1">
             <button id="selected_year">Next</button>
         </div>
         <div id="length">
+             <p><span id="length_pool"></span> pilots available.</p>
             <h2>How Long?</h2>
+           
             <p>The campaign length affects squadron size and special operation costs/gains.</p>
             <select id="length_select" name="length_select">
                 <option value="">  </option>
@@ -50,7 +55,9 @@
             <button id="selected_length">Next</button>
         </div>
         <div id="forces">
+            <p><span id="forces_pool"></span> pilots available.</p>
             <h2>Which Forces?</h2>
+            
             <p>Apply campaign restrictions or personal preferences.</p>
             <fieldset id="force_options">
             </fieldset>
@@ -58,14 +65,16 @@
             
         </div>
         <div id="aircraft">
+            <p><span id="aircraft_pool"></span> pilots available.</p>
             <h2>Which Aircraft?</h2>
+            
             <p>Apply campaign restrictions or personal preferences.</p>
             <fieldset id="aircraft_options">
             </fieldset>
             <button id="selected_aircraft">Finish</button>
         </div>
         <div id="results">
-            <h2>Your Random Squadron</h2>
+            <h2><span id="squadron_name"></span></h2>
             <table id="results_table">
                 <thead>
                     <tr>
@@ -80,15 +89,23 @@
                 <tbody>
                 </tbody>
             </table>
-
+            <p>
             Pilot SOs (<span id="pilot_sos">0</span>) + Random Squadron Rule SOs (<span id="rules_sos">0</span>) = <span id="total_sos">0</span>
+            </p><p>
+            <button id="restart_results">Restart</button></p>
         </div>
-
+        <div id="error">
+            <h2>Error</h2>
+            <p>Sorry, there are not enough valid pilots for a squadron given your selections.</p>
+            <p>Try checking the campaign year, and adding more expansion sets.</p>
+            <p>
+            <button id="restart">Restart</button></p>
+        </div>
 
     </main>
 
     <footer>
-        <!-- Footer content will go here -->
+        
     </footer>
 
     <script src="js/main.js"></script>
