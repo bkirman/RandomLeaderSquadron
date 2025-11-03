@@ -1,0 +1,256 @@
+{
+    "game_name":"Phantom Leader Deluxe",
+    "random_squadron_so" : {"s":6, "m":12, "l":18},
+    "squadron_ranks":{
+        "s":{"Newbie":1, "Green":2, "Average":4, "Skilled":1, "Veteran":0, "Legendary":0},
+        "m":{"Newbie":1, "Green":2, "Average":5, "Skilled":1, "Veteran":1, "Legendary":0},
+        "l":{"Newbie":1, "Green":2, "Average":6, "Skilled":2, "Veteran":1, "Legendary":0}
+    },
+    "sets" : [
+        {
+            "name": "Phantom Leader Deluxe",
+            "aircraft": [
+                {
+                    "name":"F-4 Phantom II",
+                    "force":"USAF",
+                    "year_start":1962,
+                    "year_end":1972,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Scorpio", "Echo", "Monger", "Splashdog", "Robin", "Jagger", "Boomer", "T-Bone", "Junior", "Papa", "Cajun", "Smokes", "Kirin"]
+                },
+                {
+                    "name":"F-101 Voodoo",
+                    "force":"USAF",
+                    "year_start":1962,
+                    "year_end":1972,
+                    "so":{"s":5, "m":10, "l":15},
+                    "pilots" : ["Ruff", "Mobster"]
+                },
+                {
+                    "name":"A-1 Skyraider",
+                    "force":"USAF",
+                    "year_start":1962,
+                    "year_end":1972,
+                    "so":{"s":3, "m":6, "l":9},
+                    "pilots" : ["Zing", "Q-Tip"]
+                },
+                {
+                    "name":"F-102 Delta Dagger",
+                    "force":"USAF",
+                    "year_start":1962,
+                    "year_end":1972,
+                    "so":{"s":4, "m":8, "l":12},
+                    "pilots" : ["Magic", "Blade"]
+                },
+                {
+                    "name":"EB-66 Destroyer",
+                    "force":"USAF",
+                    "year_start":1962,
+                    "year_end":1972,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Jackpot", "Bat"]
+                },
+                {
+                    "name":"F-104 Starfighter",
+                    "force":"USAF",
+                    "year_start":1962,
+                    "year_end":1972,
+                    "so":{"s":4, "m":8, "l":12},
+                    "pilots" : ["Gusher", "Rebel", "Too Tall"]
+                },
+                {
+                    "name":"A-7 Corsair II",
+                    "force":"USAF",
+                    "year_start":1962,
+                    "year_end":1972,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Tracker", "Houston", "Digger","Barley"]
+                },
+                {
+                    "name":"F-105 Wild Weasel",
+                    "force":"USAF",
+                    "year_start":1962,
+                    "year_end":1972,
+                    "so":{"s":2, "m":4, "l":6},
+                    "pilots" : ["Vapor", "Mad Dog", "Trigger"]
+                },
+                {
+                    "name":"F-5 Freedom Fighter",
+                    "force":"USAF",
+                    "year_start":1962,
+                    "year_end":1972,
+                    "so":{"s":3, "m":6, "l":9},
+                    "pilots" : ["Fizzbee", "Montana", "Jenkins"]
+                },
+                {
+                    "name":"F-100 Super Sabre",
+                    "force":"USAF",
+                    "year_start":1962,
+                    "year_end":1972,
+                    "so":{"s":3, "m":6, "l":9},
+                    "pilots" : ["Honker", "Crater", "Taz","Surfer", "Misty", "Buzzard"]
+                },
+                {
+                    "name":"F-105 Thunderchief",
+                    "force":"USAF",
+                    "year_start":1962,
+                    "year_end":1972,
+                    "so":{"s":2, "m":4, "l":6},
+                    "pilots" : ["Pigeon", "Ferret", "Stash","Irish", "Dagger", "Judge","Dutch","Lefty","Chiller"]
+                },
+                {
+                    "name":"EA-6A",
+                    "force":"US Navy",
+                    "year_start":1962,
+                    "year_end":1972,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Frisco", "Easy Money"]
+                },
+                {
+                    "name":"E-1 Tracer",
+                    "force":"US Navy",
+                    "year_start":1962,
+                    "year_end":1972,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Vulture"]
+                },
+                {
+                    "name":"A-4 Skyhawk",
+                    "force":"US Navy",
+                    "year_start":1962,
+                    "year_end":1972,
+                    "so":{"s":3, "m":6, "l":9},
+                    "pilots" : ["Pluto", "Peewee","Noah","Preacher","Midas","Stargazer","Back Fire","Shadow"]
+                },
+                {
+                    "name":"A-7 Corsair II",
+                    "force":"US Navy",
+                    "year_start":1962,
+                    "year_end":1972,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Gato","Griz","Crowbar","Taxi","Martimer","Freight Train","Blowhole"]
+                },
+                {
+                    "name":"E-2 Hawkeye",
+                    "force":"US Navy",
+                    "year_start":1962,
+                    "year_end":1972,
+                    "so":{"s":-2, "m":-4, "l":-6},
+                    "pilots" : ["Guardian"]
+                },
+                {
+                    "name":"A-3 Skywarrior",
+                    "force":"US Navy",
+                    "year_start":1962,
+                    "year_end":1972,
+                    "so":{"s":3, "m":6, "l":9},
+                    "pilots" : ["Ghost","Seaweed"]
+                },
+                {
+                    "name":"A-6 Intruder",
+                    "force":"US Navy",
+                    "year_start":1962,
+                    "year_end":1972,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Dapper","Gringo","Razor","Driver","Grease","Firefly"]
+                },
+                {
+                    "name":"F-8 Crusader",
+                    "force":"US Navy",
+                    "year_start":1962,
+                    "year_end":1972,
+                    "so":{"s":3, "m":6, "l":9},
+                    "pilots" : ["Scar","Moose","Knife","Rabbit","Wise Guy"]
+                },
+                {
+                    "name":"F-4 Phantom II",
+                    "force":"US Navy",
+                    "year_start":1962,
+                    "year_end":1972,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Whiplash","Crusty","Buick","Steam","Plunger","Barbarian","Batdog","Showtime","Buck","Poco","Duke","G.O."]
+                }
+
+            ]
+        },
+        {
+            "name": "Phantom Leader: Expansion #1",
+            "aircraft":[
+                {
+                    "name":"F-4 Phantom II",
+                    "force":"USAF",
+                    "year_start":1962,
+                    "year_end":1972,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Gadget", "Beeper", "Lefty"]
+                },
+                {
+                    "name":"F-4 Phantom II (Elite)",
+                    "force":"USAF",
+                    "year_start":1962,
+                    "year_end":1972,
+                    "so":{"s":-3, "m":-6, "l":-9},
+                    "pilots" : ["Arrow"]
+                },
+                {
+                    "name":"F-4 Phantom II (Elite+)",
+                    "force":"USAF",
+                    "year_start":1962,
+                    "year_end":1972,
+                    "so":{"s":-4, "m":-8, "l":-12},
+                    "pilots" : ["Chief","Nomad"]
+                },
+                {
+                    "name":"F-101 Voodoo (Elite)",
+                    "force":"USAF",
+                    "year_start":1962,
+                    "year_end":1972,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Titan"]
+                },
+                {
+                    "name":"A-1 Skyraider",
+                    "force":"USAF",
+                    "year_start":1962,
+                    "year_end":1972,
+                    "so":{"s":3, "m":6, "l":9},
+                    "pilots" : ["Scarecrow"]
+                },
+                {
+                    "name":"F-106 Delta Dart",
+                    "force":"USAF",
+                    "year_start":1962,
+                    "year_end":1972,
+                    "so":{"s":6, "m":12, "l":18},
+                    "pilots" : ["Dice", "Pointer","Redeye"]
+                },
+                {
+                    "name":"F-100 Super Sabre (Elite)",
+                    "force":"USAF",
+                    "year_start":1962,
+                    "year_end":1972,
+                    "so":{"s":5, "m":8, "l":11},
+                    "pilots" : ["Diamond"]
+                },
+                {
+                    "name":"A-37 Dragonfly",
+                    "force":"USAF",
+                    "year_start":1962,
+                    "year_end":1972,
+                    "so":{"s":4, "m":8, "l":12},
+                    "pilots" : ["Nails","Kaboose","Firefly"]
+                },
+                {
+                    "name":"A-5 Vigilante",
+                    "force":"US Navy",
+                    "year_start":1962,
+                    "year_end":1972,
+                    "so":{"s":1, "m":2, "l":3},
+                    "pilots" : ["Santa"]
+                }
+                
+            ]
+        }
+]
+
+}

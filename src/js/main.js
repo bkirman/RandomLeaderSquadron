@@ -20,6 +20,7 @@ var ranks = {};
 var rulesSOs = 0
 var squadronSize = 0;
 var randomName = "Random Squadron";
+var selectAll = true;
 
 function init() {
     document.querySelector('button#selected_game').addEventListener('click',gameSelected);
@@ -30,12 +31,15 @@ function init() {
     document.querySelector('button#selected_aircraft').addEventListener('click',aircraftSelected);
     document.querySelector('button#restart').addEventListener('click',restart);
     document.querySelector('button#restart_results').addEventListener('click',restart);
+    document.querySelector('button#toggle_select_forces').addEventListener('click',toggleSelect);
+    document.querySelector('button#toggle_select_aircraft').addEventListener('click',toggleSelect);
+    document.querySelector('button#toggle_select_expansions').addEventListener('click',toggleSelect);
 }
 
 function gameSelected() {
     const gameSelect = document.getElementById("game_select");
     const selectedGame = gameSelect.value;
-    
+    selectAll = true;
     const main = document.querySelector('main');
 
     
@@ -51,7 +55,7 @@ function gameSelected() {
             const box = document.createElement('input');
             box.type = 'checkbox';
             box.name = set.name;
-            box.checked = true;
+            box.checked = selectAll;
             const label = document.createElement('label');
             label.htmlFor = set.name;
             
@@ -84,7 +88,15 @@ function expansionSelected() {
         const set = gameData.sets.find(s => s.name === expansion);
         if (set) {
             set.aircraft.forEach(aircraft => {
+                //If aircraft with this name is already in the pool, append pilots to the list
+                const existingAircraft = aircraftPool.find(a => a.name === aircraft.name && a.force === aircraft.force);
+                if (existingAircraft) {
+                    existingAircraft.pilots = existingAircraft.pilots.concat(aircraft.pilots);
+                    return;
+                }
+                else{
                 aircraftPool.push(aircraft);
+                }
             });
         }});
 
@@ -99,6 +111,13 @@ function expansionSelected() {
     generateRandomSquadronName();
     document.getElementById("expansions").style.display = "none";
     document.getElementById("year").style.display = "block";
+    var earliest = Math.min(...aircraftPool.map(aircraft => aircraft.year_start));
+    var latest = Math.max(...aircraftPool.map(aircraft => aircraft.year_end));
+    document.getElementById("year_input").value = earliest;
+    console.log(Math.max(...aircraftPool.map(aircraft => aircraft.year_end)).toString());
+    document.getElementById("year_min").textContent = earliest;
+    document.getElementById("year_max").textContent = latest;
+
 }
 
 function yearSelected() {
@@ -129,6 +148,7 @@ function yearSelected() {
 function lengthSelected() {
     const lengthSelect = document.getElementById("length_select");
     selectedLength = lengthSelect.value;
+    selectAll = true;
     //console.log("Selected length:", selectedLength);
 
     squadronSize = Object.values(gameData.squadron_ranks[selectedLength.toLowerCase().charAt(0)]).reduce((a, b) => a + b, 0);
@@ -153,7 +173,7 @@ function lengthSelected() {
         const box = document.createElement('input');
         box.type = 'checkbox';
         box.name = force;
-        box.checked = true;
+        box.checked = selectAll;
         const label = document.createElement('label');
         label.htmlFor = force;
         
@@ -169,11 +189,13 @@ function lengthSelected() {
     }
 
     document.getElementById("forces_pool").textContent = currentPoolSize;
+    
     document.getElementById("length").style.display = "none";
     document.getElementById("forces").style.display = "block";
 }
 
 function forcesSelected() {
+    selectAll = true;
     const forceCheckboxes = document.querySelectorAll('fieldset#force_options input[type="checkbox"]');
     selectedForces = [];
     forceCheckboxes.forEach(box => {
@@ -191,7 +213,9 @@ function forcesSelected() {
             aircraftPool.splice(i, 1);
         }
     }
-    //console.log("Filtered aircraft pool after forces selection:", aircraftPool);
+    
+
+    console.log("Filtered aircraft pool after forces selection:", aircraftPool);
     //populate aircraft options
     const fieldset = document.querySelector('fieldset#aircraft_options');
     fieldset.innerHTML = ""; //clear existing options
@@ -199,7 +223,7 @@ function forcesSelected() {
         const box = document.createElement('input');
         box.type = 'checkbox';
         box.name = aircraft.name + "$"+aircraft.force;
-        box.checked = true;
+        box.checked = selectAll; 
         const label = document.createElement('label');
         label.htmlFor = aircraft.name + "$"+aircraft.force;
         
@@ -364,6 +388,7 @@ function restart() {
     ranks = {};
     rulesSOs = 0;
     squadronSize = 0;
+    selectAll = true;
 
     document.getElementById("results").style.display = "none";
     document.getElementById("length").style.display = "none";
@@ -425,3 +450,8 @@ async function generateRandomSquadronName() {
     randomSquadronName = "The "+ await randomAdjective() + " " + await randomAnimal();
 }
 
+function toggleSelect() {
+    selectAll = !selectAll;
+    document.querySelectorAll('input[type=checkbox]').forEach(el => el.checked = selectAll);
+
+}
