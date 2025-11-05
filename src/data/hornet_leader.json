@@ -1,0 +1,192 @@
+{
+    "game_name":"Hornet Leader: CAO",
+    "random_squadron_so" : {"s":6, "m":12, "l":18},
+    "squadron_ranks":{
+        "s":{"Newbie":1, "Green":2, "Average":4, "Skilled":1, "Veteran":0, "Legendary":0},
+        "m":{"Newbie":1, "Green":2, "Average":5, "Skilled":1, "Veteran":1, "Legendary":0},
+        "l":{"Newbie":1, "Green":2, "Average":6, "Skilled":2, "Veteran":1, "Legendary":0}
+    },
+    "sets" : [
+        {
+            "name": "Hornet Leader: CAO",
+            "aircraft": [
+                {
+                    "name":"F/A-18C Hornet",
+                    "force":"US Navy",
+                    "year_start":1983,
+                    "year_end":9999,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Mustang", "Cowboy", "Banzai", "Bear", "Wolf", "Duke", "Wedge", "Lightning", "Panther", "Blackhawk", "Raider", "Griffin", "Hunter","Talon"]
+                },
+                {
+                    "name":"EA-6B Prowler",
+                    "force":"US Navy",
+                    "year_start":1972,
+                    "year_end":2011,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Moon", "Crunch"]
+                },
+                {
+                    "name":"F/A-18F Hornet",
+                    "force":"US Navy",
+                    "year_start":2001,
+                    "year_end":9999,
+                    "so":{"s":-3, "m":-6, "l":-9},
+                    "pilots" : ["Toon", "Bacon","Tonto","Slick","Gizmo","Bigfoot"]
+                },
+                {
+                    "name":"E-2C Hawkeye",
+                    "force":"US Navy",
+                    "year_start":1964,
+                    "year_end":9999,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Brick","Eyes"]
+                },
+                {
+                    "name":"F-35B/C Lightning II",
+                    "force":"US Navy / USMC",
+                    "year_start":2014,
+                    "year_end":9999,
+                    "so":{"s":-3, "m":-6, "l":-9},
+                    "pilots" : ["Meatball","Thor","Pyro","Salsa"]
+                },
+                {
+                    "name":"AV-8B Harrier II",
+                    "force":"USMC",
+                    "year_start":1985,
+                    "year_end":9999,
+                    "so":{"s":4, "m":8, "l":12},
+                    "pilots" : ["Crispy","Dino","Beast","Hammer","Mystic", "Big Time","Saw","Rudder","Burger","Turnip","Kong","Animal","Sniper","Tex"]
+                },
+                {
+                    "name":"A-7 Corsair II",
+                    "force":"US Navy",
+                    "year_start":1967,
+                    "year_end":1993,
+                    "so":{"s":4, "m":8, "l":12},
+                    "pilots" : ["Spike","Raven","Wash","Buzz","Tuna","Pluto","Psycho","Hoss"]
+                },
+                {
+                    "name":"A-6 Intruder",
+                    "force":"US Navy",
+                    "year_start":1963,
+                    "year_end":1997,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Camel","Shifty","Dingo","Cracken","Extra","Mullet","Bug","Chili"]
+                },
+                {
+                    "name":"F-14 Tomcat",
+                    "force":"US Navy",
+                    "year_start":1972,
+                    "year_end":2006,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Bison","Maverick","Farmboy","Sparky","Kermit","Waldo","Teflon","Ogre"]
+                },
+                {
+                    "name":"EA-18G Hornet",
+                    "force":"US Navy",
+                    "year_start":2011,
+                    "year_end":9999,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Alpo","Scotty"]
+                },
+                {
+                    "name":"F/A-18E Hornet",
+                    "force":"US Navy",
+                    "year_start":2000,
+                    "year_end":9999,
+                    "so":{"s":-2, "m":-4, "l":-6},
+                    "pilots" : ["Dodger","Tigger","Scout","Tango","Boston","Merlin","Doc","Chaos","Ranger","Shepherd","Caveman","Alien"]
+                }
+
+
+            ]
+        },
+        {
+            "name": "The Cthulhu Conflict",
+            "aircraft":[
+                
+                {
+                    "name":"MQ-47B",
+                    "force":"US Navy",
+                    "year_start":2015,
+                    "year_end":9999,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Artoo","Nomad"]
+                }
+                
+            ]
+        },
+        {
+            "name": "Expansion #1",
+            "aircraft":[
+                
+                {
+                    "name":"F/A-18C Hornet",
+                    "force":"US Navy",
+                    "year_start":1983,
+                    "year_end":9999,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Taco", "Tooth", "Nerve"]
+                },
+                {
+                    "name":"F/A-18C Hornet (Elite - Axe)",
+                    "force":"US Navy",
+                    "year_start":1983,
+                    "year_end":9999,
+                    "so":{"s":-5, "m":-10, "l":-15},
+                    "pilots" : ["Axe"]
+                },
+                {
+                    "name":"F/A-18C Hornet (Elite - Lizgar)",
+                    "force":"US Navy",
+                    "year_start":1983,
+                    "year_end":9999,
+                    "so":{"s":-3, "m":-6, "l":-9},
+                    "pilots" : ["Lizgar"]
+                },
+                {
+                    "name":"F/A-18C Hornet (Elite - Bat)",
+                    "force":"US Navy",
+                    "year_start":1983,
+                    "year_end":9999,
+                    "so":{"s":-6, "m":-12, "l":-18},
+                    "pilots" : ["Bat"]
+                },
+                {
+                    "name":"OV-10 Bronco",
+                    "force":"US Navy",
+                    "year_start":1969,
+                    "year_end":1995,
+                    "so":{"s":2, "m":4, "l":6},
+                    "pilots" : ["Bell","Spy","Harp"]
+                },
+                {
+                    "name":"A-6 Intruder (Elite - Trident)",
+                    "force":"US Navy",
+                    "year_start":1963,
+                    "year_end":1997,
+                    "so":{"s":-2, "m":-4, "l":-6},
+                    "pilots" : ["Trident"]
+                },
+                {
+                    "name":"F-14 Tomcat",
+                    "force":"US Navy",
+                    "year_start":1972,
+                    "year_end":2006,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Maestro","Sticky","Coffee"]
+                },
+                {
+                    "name":"F-14 Tomcat (Elite - Thumper)",
+                    "force":"US Navy",
+                    "year_start":1972,
+                    "year_end":2006,
+                    "so":{"s":-5, "m":-10, "l":-15},
+                    "pilots" : ["Thumper"]
+                }
+            ]
+        }
+]
+
+}
