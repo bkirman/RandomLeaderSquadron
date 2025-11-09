@@ -130,28 +130,25 @@
                     "pilots" : ["Taco", "Tooth", "Nerve"]
                 },
                 {
-                    "name":"F/A-18C Hornet (Elite - Axe)",
+                    "name":"F/A-18C Hornet (Elite)",
                     "force":"US Navy",
                     "year_start":1983,
                     "year_end":9999,
                     "so":{"s":-5, "m":-10, "l":-15},
-                    "pilots" : ["Axe"]
-                },
-                {
-                    "name":"F/A-18C Hornet (Elite - Lizgar)",
-                    "force":"US Navy",
-                    "year_start":1983,
-                    "year_end":9999,
-                    "so":{"s":-3, "m":-6, "l":-9},
-                    "pilots" : ["Lizgar"]
-                },
-                {
-                    "name":"F/A-18C Hornet (Elite - Bat)",
-                    "force":"US Navy",
-                    "year_start":1983,
-                    "year_end":9999,
-                    "so":{"s":-6, "m":-12, "l":-18},
-                    "pilots" : ["Bat"]
+                    "pilots" : [
+                            {
+                            "name":"Axe",
+                            "so":{"s":-5, "m":-10, "l":-15}
+                            },
+                            {
+                            "name":"Lizgar",
+                            "so":{"s":-3, "m":-6, "l":-9}
+                            },
+                            {
+                            "name":"Bat",
+                            "so":{"s":-6, "m":-12, "l":-18}
+                            }
+                        ]
                 },
                 {
                     "name":"OV-10 Bronco",
@@ -162,7 +159,7 @@
                     "pilots" : ["Bell","Spy","Harp"]
                 },
                 {
-                    "name":"A-6 Intruder (Elite - Trident)",
+                    "name":"A-6 Intruder (Elite)",
                     "force":"US Navy",
                     "year_start":1963,
                     "year_end":1997,
@@ -178,7 +175,7 @@
                     "pilots" : ["Maestro","Sticky","Coffee"]
                 },
                 {
-                    "name":"F-14 Tomcat (Elite - Thumper)",
+                    "name":"F-14 Tomcat (Elite)",
                     "force":"US Navy",
                     "year_start":1972,
                     "year_end":2006,

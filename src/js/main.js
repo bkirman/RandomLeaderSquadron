@@ -89,7 +89,7 @@ function expansionSelected() {
         if (set) {
             set.aircraft.forEach(aircraft => {
                 //If aircraft with this name is already in the pool, append pilots to the list
-                const existingAircraft = aircraftPool.find(a => a.name === aircraft.name && a.force === aircraft.force);
+                const existingAircraft = aircraftPool.find(a => a.name === aircraft.name && a.force === aircraft.force && a.year_start === aircraft.year_start);
                 if (existingAircraft) {
                     existingAircraft.pilots = existingAircraft.pilots.concat(aircraft.pilots);
                     return;
@@ -150,8 +150,21 @@ function lengthSelected() {
     selectedLength = lengthSelect.value;
     selectAll = true;
     //console.log("Selected length:", selectedLength);
-
-    squadronSize = Object.values(gameData.squadron_ranks[selectedLength.toLowerCase().charAt(0)]).reduce((a, b) => a + b, 0);
+    //add ranks for selected length
+    //Some titles (Zero Leader) have variable setup based on year.
+    if(Object.hasOwn(gameData,"squadron_ranks_years")) {
+        if(Object.hasOwn(gameData.squadron_ranks_years,selectedYear.toString()))
+        {
+            ranks = gameData.squadron_ranks_years[selectedYear.toString()][selectedLength.charAt(0)];
+        }
+        else {//default
+            ranks = gameData.squadron_ranks[selectedLength.charAt(0)];
+        }
+    }
+    else {
+        ranks = gameData.squadron_ranks[selectedLength.charAt(0)];
+    }
+    squadronSize = Object.values(ranks).reduce((a, b) => a + b, 0);
 
     //get a list of forces from the aircraft pool
     const forcesSet = new Set();
@@ -161,8 +174,7 @@ function lengthSelected() {
     const forcesList = Array.from(forcesSet);
     //console.log("Available forces in aircraft pool:", forcesList);
 
-    //add ranks for selected length
-    ranks = gameData.squadron_ranks[selectedLength.charAt(0)];
+    
     //console.log("Ranks for selected length:", ranks);
 
     rulesSOs = gameData.random_squadron_so[selectedLength.charAt(0)];
@@ -228,7 +240,7 @@ function forcesSelected() {
         label.htmlFor = aircraft.name + "$"+aircraft.force;
         
         label.appendChild(box);
-        label.appendChild(document.createTextNode(" "+aircraft.name+" ("+aircraft.force+", "+aircraft.pilots.length+" pilots)"));
+        label.appendChild(document.createTextNode(" "+aircraft.name+" ("+aircraft.force+", "+aircraft.pilots.length+" pilot"+ (aircraft.pilots.length>1?"s":"") +")"));
         fieldset.appendChild(label);
     });
 
@@ -261,6 +273,10 @@ function aircraftSelected() {
         if (aircraft) {
             aircraft.pilots.forEach(pilot => {
                 var pilotEntry = {pilot:pilot, aircraft:aircraft.name, force:aircraft.force, so:aircraft.so[selectedLength.charAt(0)]};
+                if(typeof pilotEntry.pilot == 'object') {//Aces, Elite pilots have different SO values than base aircraft.
+                    pilotEntry.so = pilotEntry.pilot.so[selectedLength.charAt(0)];
+                    pilotEntry.pilot = pilotEntry.pilot.name
+                }
                 pilotPool.push(pilotEntry);
             });
         }

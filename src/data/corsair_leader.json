@@ -1,0 +1,628 @@
+{
+    "game_name":"Corsair Leader",
+    "random_squadron_so" : {"s":6, "m":12, "l":18},
+    "squadron_ranks":{
+        "s":{"Newbie":1, "Green":2, "Average":4, "Skilled":1, "Veteran":0, "Legendary":0},
+        "m":{"Newbie":1, "Green":2, "Average":5, "Skilled":1, "Veteran":1, "Legendary":0},
+        "l":{"Newbie":1, "Green":2, "Average":6, "Skilled":2, "Veteran":1, "Legendary":0}
+    },
+    "sets" : [
+        {
+            "name": "Corsair Leader",
+            "aircraft": [
+                {
+                    "name":"B-25G Mitchell",
+                    "force":"USAAF",
+                    "year_start":1943,
+                    "year_end":1945,
+                    "so":{"s":-5, "m":-10, "l":-15},
+                    "pilots" : ["Foster","Duchetta","Smeltzer","Guadagnino"]
+                },
+                {
+                    "name":"F6F Hellcat",
+                    "force":"USN / USMC",
+                    "year_start":1943,
+                    "year_end":1945,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["JT \"Buckeye\" Reece","Joe \"Mangz\" Manglardi","Alistair Hull","Bert G. Keredan","L.D. Davis","Benjamin \"Maestro\" Weitze","Charly Biard","Tom \"Tumba\" Snäll","Kevin Morgan"]
+                },
+                {
+                    "name":"TBD Devastator",
+                    "force":"USN / USMC",
+                    "year_start":1941,
+                    "year_end":1942,
+                    "so":{"s":2, "m":4, "l":6},
+                    "pilots" : ["Washington","Powell","Hughes","Long","Eandi"]
+                },
+                {
+                    "name":"SB2U Vindicator",
+                    "force":"USN / USMC",
+                    "year_start":1941,
+                    "year_end":1942,
+                    "so":{"s":3, "m":6, "l":9},
+                    "pilots" : ["Hayes","Griffin","Russel"]
+                },
+                {
+                    "name":"P-40 Warhawk",
+                    "force":"USAAF",
+                    "year_start":1941,
+                    "year_end":1942,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Hurt","Jones","Washburn","LTC CJ Wallington","Jeff Johansen"]
+                },
+                {
+                    "name":"P-40 Warhawk",
+                    "force":"USAAF",
+                    "year_start":1943,
+                    "year_end":1945,
+                    "so":{"s":2, "m":4, "l":6},
+                    "pilots" : ["Hurt","Jones","Washburn","LTC CJ Wallington","Jeff Johansen"]
+                },
+                {
+                    "name":"P-38 Lightning",
+                    "force":"USAAF",
+                    "year_start":1943,
+                    "year_end":1945,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Ric van Dyke","Delton Goerke","2Lt Scott Biggar","Leo \"Banzai\" Bonser","Ken Schooff","Dusty Rhodes","Gary Wishik","Everett Anglin","Besby F. Holmes","Julius Jacobson","Lawrence Graebner","Thomas G. Lanphier, Jr.","Maj Tankertoad","Rex T. Barber","Nick Butta","Raymond K. Hine"]
+                },
+                {
+                    "name":"E-2C Hawkeye",
+                    "force":"USN - Pearl Harbor (Time Travel)",
+                    "year_start":1941,
+                    "year_end":9999,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Watcher"]
+                },
+                {
+                    "name":"A-7 Corsair II",
+                    "force":"USN - Pearl Harbor (Time Travel)",
+                    "year_start":1941,
+                    "year_end":1991,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Blackjack","Andy"]
+                },
+                {
+                    "name":"A-6 Intruder",
+                    "force":"USN - Pearl Harbor (Time Travel)",
+                    "year_start":1941,
+                    "year_end":1997,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Clutch"]
+                },
+                {
+                    "name":"F-14 Tomcat",
+                    "force":"USN - Pearl Harbor (Time Travel)",
+                    "year_start":1941,
+                    "year_end":2006,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Snoopy","Hunter"]
+                },
+                {
+                    "name":"TBF Avenger",
+                    "force":"USN / USMC",
+                    "year_start":1942,
+                    "year_end":1945,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Chris \"Crougar\" Hueltenschmidt","Brett \"Bear\" Grimmond","Peter Gardner","Paul \"Jericho\" Baker","Bill Vandekieft"]
+                },
+                {
+                    "name":"B-25 Mitchell",
+                    "force":"USN / USMC",
+                    "year_start":1943,
+                    "year_end":1945,
+                    "so":{"s":-4, "m":-8, "l":-12},
+                    "pilots" : ["Garcia","Pat Ludwig","Martin","Thompson"]
+                },
+                {
+                    "name":"SBD Dauntless",
+                    "force":"USN / USMC",
+                    "year_start":1941,
+                    "year_end":1944,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Walker","Lewis","JD 'Bearcat' Davis","Blackshoe Benson"]
+                },
+                {
+                    "name":"SB2C Helldiver",
+                    "force":"USN / USMC",
+                    "year_start":1943,
+                    "year_end":1945,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["\"Tiny\" Cherry","Edwards","Clark","Robinson"]
+                },
+                {
+                    "name":"F2A Buffalo",
+                    "force":"USN / USMC",
+                    "year_start":1941,
+                    "year_end":1942,
+                    "so":{"s":3, "m":6, "l":9},
+                    "pilots" : ["Butler","Simmons","Bryant","Granneman","Lincoln"]
+                },
+                {
+                    "name":"F4F Wildcat",
+                    "force":"USN / USMC",
+                    "year_start":1941,
+                    "year_end":1942,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Casabelli","Mark \"Bacon\" Willmarth","Campbell","DK \"Buster\" Wiggins","Chris 'Balut' Saguisag","Chuck \"Greycap\" Seegert","Tom \"Killer\" Konczal","Chris Foote","Gil \"Pepe\" Ocampo","Bill Regalo","John \"Showbiz\" Starman"]
+                },
+                {
+                    "name":"F4F Wildcat",
+                    "force":"USN / USMC",
+                    "year_start":1943,
+                    "year_end":1945,
+                    "so":{"s":2, "m":4, "l":6},
+                    "pilots" : ["Casabelli","Mark \"Bacon\" Willmarth","Campbell","DK \"Buster\" Wiggins","Chris 'Balut' Saguisag","Chuck \"Greycap\" Seegert","Tom \"Killer\" Konczal","Chris Foote","Gil \"Pepe\" Ocampo","Bill Regalo","John \"Showbiz\" Starman"]
+                },
+                {
+                    "name":"F4U Corsair",
+                    "force":"UK - FAA",
+                    "year_start":1943,
+                    "year_end":1945,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Bruce","Aarvold","Jason \"Bones\" Allibone", "Peter Blake","Clay Jensen", "Crowe","Acland","Potter","Clague","Capt. Floyd Salerno","Granger","Nevill","Staub","Bob \"Eyeballs\" Alexander","Ezra","Lindon Paxton"]
+                },
+                {
+                    "name":"F4U Corsair",
+                    "force":"USN / USMC",
+                    "year_start":1943,
+                    "year_end":1945,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Kevin \"Puffy\" Caldwell","Scott \"Sticks\" Rowland","Charlie Field","Chris Severs","Robert E. Stacy","Alex Aguila","Aje \"Ronin\" Sakamoto","Matt Rider","Jose 'Josito' Garcia","Eric Gingrich","Leland \"Top\" Gilton","Figueroa","Kevin McCammon","Emery Gallant","Ed Schnettler","1st Lt. Derek \"12 Pack\" Case","Henry Achilles","Joe Harper","Frederic Rodriguez","Tom \"Madman\" Manley","Jacob Tan Jia En","Lee \"Madcartographer\" Smith","Dan Schul","Kurl \"Weasel\" Wasserman","Gutenkunst","Chuck \"Homer\" Turner","Russo Corbally","Dynamite Doug Wong"]
+                },
+                {
+                    "name":"F4U Corsair (Ace)",
+                    "force":"Air Volunteer Group",
+                    "year_start":1943,
+                    "year_end":1945,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : [{
+                            "name":"\"Pappy\" Boyington",
+                            "so":{"s":-10, "m":-20, "l":-30}
+                            }]
+                }
+            ]
+        }
+        ,{
+            "name": "Aces",
+            "aircraft": [
+                {
+                    "name":"TBD Devastator (Ace)",
+                    "force":"USN",
+                    "year_start":1941,
+                    "year_end":1942,
+                    "so":{"s":2, "m":4, "l":6},
+                    "pilots" : [
+                            {
+                            "name":"George Gay",
+                            "so":{"s":-3, "m":-5, "l":-8}
+                            },
+                            {
+                            "name":"James Brett",
+                            "so":{"s":-3, "m":-7, "l":-10}
+                            }
+
+                        ]
+                },
+                {
+                    "name":"SB2C Helldiver (Ace)",
+                    "force":"USN",
+                    "year_start":1943,
+                    "year_end":1945,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : [
+                            {
+                            "name":"Clifford Stone",
+                            "so":{"s":-7, "m":-14, "l":-22}
+                            },
+                            {
+                            "name":"\"Don\" Engen",
+                            "so":{"s":-6, "m":-12, "l":-17}
+                            },
+                            {
+                            "name":"Harold Buell",
+                            "so":{"s":-7, "m":-15, "l":-22}
+                            }
+                    ]
+                },
+                {
+                    "name":"P-40 Warhawk (Ace)",
+                    "force":"USAAF",
+                    "year_start":1941,
+                    "year_end":1942,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : [
+                            {
+                            "name":"George Welch",
+                            "so":{"s":-5, "m":-10, "l":-15}
+                            },
+                            {
+                            "name":"Kenneth Taylor",
+                            "so":{"s":-3, "m":-6, "l":-8}
+                            },
+                            {
+                            "name":"Robert Rogers",
+                            "so":{"s":-1, "m":-2, "l":-3}
+                            },
+                            {
+                            "name":"Samuel Bishop",
+                            "so":{"s":-1, "m":-2, "l":-3}
+                            },
+                            {
+                            "name":"Hans Christiansen",
+                            "so":{"s":-1, "m":-2, "l":-3}
+                            },
+                            {
+                            "name":"George Whiteman",
+                            "so":{"s":-1, "m":-2, "l":-3}
+                            }
+                    ]
+                },
+                {
+                    "name":"P-40 Warhawk (Ace)",
+                    "force":"USAAF",
+                    "year_start":1943,
+                    "year_end":1945,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : [
+                            {
+                            "name":"George Welch",
+                            "so":{"s":-3, "m":-6, "l":-9}
+                            },
+                            {
+                            "name":"Kenneth Taylor",
+                            "so":{"s":-1, "m":-2, "l":-3}
+                            },
+                            {
+                            "name":"Robert Rogers",
+                            "so":{"s":1, "m":0, "l":-1}
+                            },
+                            {
+                            "name":"Samuel Bishop",
+                            "so":{"s":1, "m":0, "l":-1}
+                            },
+                            {
+                            "name":"Hans Christiansen",
+                            "so":{"s":1, "m":0, "l":-1}
+                            },
+                            {
+                            "name":"George Whiteman",
+                            "so":{"s":1, "m":0, "l":-1}
+                            }
+                    ]
+                },
+                {
+                    "name":"P-38 Lightning (Ace)",
+                    "force":"USAAF",
+                    "year_start":1943,
+                    "year_end":1945,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : [
+                            {
+                            "name":"William Mitchell",
+                            "so":{"s":-4, "m":-8, "l":-12}
+                            },
+                            {
+                            "name":"Thomas Lanphier",
+                            "so":{"s":-2, "m":-5, "l":-7}
+                            },
+                            {
+                            "name":"Rex Barber",
+                            "so":{"s":-2, "m":-4, "l":-7}
+                            },
+                            {
+                            "name":"Harry Brown",
+                            "so":{"s":-2, "m":-4, "l":-5}
+                            }
+                    ]
+                },
+                {
+                    "name":"SB2U Vindicator (Ace)",
+                    "force":"USN",
+                    "year_start":1941,
+                    "year_end":1942,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : [{
+                            "name":"Robert Fleming",
+                            "so":{"s":-4, "m":-9, "l":-13}
+                            }]
+                },
+                {
+                    "name":"SB2U Vindicator (Ace)",
+                    "force":"USMC",
+                    "year_start":1941,
+                    "year_end":1942,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : [{
+                            "name":"Lofton Henderson",
+                            "so":{"s":-3, "m":-7, "l":-10}
+                            }]
+                },
+                {
+                    "name":"SBD Dauntless (Ace)",
+                    "force":"USN",
+                    "year_start":1941,
+                    "year_end":1944,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : [
+                            {
+                            "name":"Robert Dixon",
+                            "so":{"s":-4, "m":-9, "l":-13}
+                            },
+                            {
+                            "name":"\"Swede\" Vejtasa",
+                            "so":{"s":-8, "m":-17, "l":-25}
+                            },
+                            {
+                            "name":"\"Dusty\" Kleiss",
+                            "so":{"s":-9, "m":-19, "l":-28}
+                            }
+                    ]
+                },
+                {
+                    "name":"SBD Dauntless (Ace)",
+                    "force":"USMC",
+                    "year_start":1941,
+                    "year_end":1944,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : [
+                            {
+                            "name":"Daniel Iverson",
+                            "so":{"s":-10, "m":-19, "l":-29}
+                            },
+                            {
+                            "name":"Elmer Glidden",
+                            "so":{"s":-10, "m":-21, "l":-31}
+                            },
+                            {
+                            "name":"Joseph Sailer",
+                            "so":{"s":-11, "m":-21, "l":-32}
+                            }
+                    ]
+                },
+                {
+                    "name":"F6F Hellcat (Ace)",
+                    "force":"USN",
+                    "year_start":1943,
+                    "year_end":1945,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : [ 
+                            {
+                            "name":"Cornelius Nooy",
+                            "so":{"s":-6, "m":-11, "l":-17}
+                            },
+                            {
+                            "name":"Patrick Fleming",
+                            "so":{"s":-6, "m":-11, "l":-17}
+                            },
+                            {
+                            "name":"Alexander Vraciu",
+                            "so":{"s":-6, "m":-12, "l":-18}
+                            },
+                            {
+                            "name":"Eugene Valencia",
+                            "so":{"s":-7, "m":-14, "l":-22}
+                            },
+                            {
+                            "name":"Cecil Harris",
+                            "so":{"s":-8, "m":-15, "l":-23}
+                            },
+                            {
+                            "name":"David McCampbell",
+                            "so":{"s":-12, "m":-24, "l":-36}
+                            }
+                        ]
+                },
+                {
+                    "name":"F4U Corsair (Ace)",
+                    "force":"UK - Royal Naval Reserves",
+                    "year_start":1943,
+                    "year_end":1945,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : [
+                            {
+                            "name":"Don Sheppard",
+                            "so":{"s":-2, "m":-4, "l":-6}
+                            }
+                        ]
+                },
+                {
+                    "name":"F4U Corsair (Ace)",
+                    "force":"UK - Royal Marines",
+                    "year_start":1943,
+                    "year_end":1945,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : [
+                            {
+                            "name":"Ronnie R.C. Hay",
+                            "so":{"s":-2, "m":-4, "l":-6}
+                            }
+                        ]
+                },
+                {
+                    "name":"F4F Wildcat (Ace)",
+                    "force":"USN",
+                    "year_start":1941,
+                    "year_end":1942,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : [
+                            {
+                            "name":"Charles Stimpson",
+                            "so":{"s":-6, "m":-12, "l":-18}
+                            },
+                            {
+                            "name":"\"Jimmy\" Thach",
+                            "so":{"s":-3, "m":-6, "l":-9}
+                            },
+                            {
+                            "name":"\"Butch\" O'Hare",
+                            "so":{"s":-4, "m":-9, "l":-13}
+                            }
+                        ]
+                },
+                {
+                    "name":"F4F Wildcat (Ace)",
+                    "force":"USN",
+                    "year_start":1943,
+                    "year_end":1945,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : [
+                            {
+                            "name":"Charles Stimpson",
+                            "so":{"s":-4, "m":-8, "l":-12}
+                            },
+                            {
+                            "name":"\"Jimmy\" Thach",
+                            "so":{"s":-1, "m":-2, "l":-3}
+                            },
+                            {
+                            "name":"\"Butch\" O'Hare",
+                            "so":{"s":-2, "m":-5, "l":-7}
+                            }
+                        ]
+                },
+                {
+                    "name":"F4F Wildcat (Ace)",
+                    "force":"USMC",
+                    "year_start":1941,
+                    "year_end":1942,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : [
+                            {
+                            "name":"Harold Bauer",
+                            "so":{"s":-3, "m":-6, "l":-8}
+                            },
+                            {
+                            "name":"Robert Galer",
+                            "so":{"s":-4, "m":-9, "l":-13}
+                            },
+                            {
+                            "name":"Jeff Deblanc",
+                            "so":{"s":-4, "m":-7, "l":-11}
+                            },
+                            {
+                            "name":"John Smith",
+                            "so":{"s":-6, "m":-12, "l":-19}
+                            },
+                            {
+                            "name":"Joe Foss",
+                            "so":{"s":-10, "m":-19, "l":-29}
+                            }
+                        ]
+                },
+                {
+                    "name":"F4F Wildcat (Ace)",
+                    "force":"USMC",
+                    "year_start":1943,
+                    "year_end":1945,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : [
+                            {
+                            "name":"Harold Bauer",
+                            "so":{"s":-1, "m":-2, "l":-3}
+                            },
+                            {
+                            "name":"Robert Galer",
+                            "so":{"s":-2, "m":-5, "l":-7}
+                            },
+                            {
+                            "name":"Jeff Deblanc",
+                            "so":{"s":-2, "m":-3, "l":-5}
+                            },
+                            {
+                            "name":"John Smith",
+                            "so":{"s":-4, "m":-8, "l":-13}
+                            },
+                            {
+                            "name":"Joe Foss",
+                            "so":{"s":-8, "m":-15, "l":-23}
+                            }
+                        ]
+                },
+                {
+                    "name":"F4U Corsair (Ace)",
+                    "force":"USN",
+                    "year_start":1943,
+                    "year_end":1945,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : [
+                            {
+                            "name":"Ira Kepford",
+                            "so":{"s":-5, "m":-10, "l":-14}
+                            },
+                            {
+                            "name":"\"Tom\" Blackburn",
+                            "so":{"s":-3, "m":-6, "l":-9}
+                            }
+                        ]
+                },
+                {
+                    "name":"F4U Corsair (Ace)",
+                    "force":"USMC",
+                    "year_start":1943,
+                    "year_end":1945,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : [
+                            {
+                            "name":"Henry McCartney",
+                            "so":{"s":-2, "m":-4, "l":-6}
+                            },
+                            {
+                            "name":"\"Ed\" Olander",
+                            "so":{"s":-2, "m":-4, "l":-7}
+                            },
+                            {
+                            "name":"Paul Mullen",
+                            "so":{"s":-2, "m":-4, "l":-6}
+                            },
+                            {
+                            "name":"Chris Magee",
+                            "so":{"s":-2, "m":-5, "l":-7}
+                            },
+                            {
+                            "name":"\"Bob\" McLurg",
+                            "so":{"s":-2, "m":-5, "l":-7}
+                            },
+                            {
+                            "name":"\"Mo\" Fisher",
+                            "so":{"s":-3, "m":-5, "l":-8}
+                            },
+                            {
+                            "name":"William Case",
+                            "so":{"s":-2, "m":-4, "l":-6}
+                            },
+                            {
+                            "name":"\"Bud\" Shaw",
+                            "so":{"s":-4, "m":-8, "l":-11}
+                            },
+                            {
+                            "name":"James Swett",
+                            "so":{"s":-6, "m":-11, "l":-17}
+                            },
+                            {
+                            "name":"John Bolt",
+                            "so":{"s":-3, "m":-5, "l":-8}
+                            },
+                            {
+                            "name":"Marion Carl",
+                            "so":{"s":-5, "m":-10, "l":-15}
+                            },
+                            {
+                            "name":"Donald Aldrich",
+                            "so":{"s":-6, "m":-12, "l":-18}
+                            },
+                            {
+                            "name":"Kenneth Walsh",
+                            "so":{"s":-8, "m":-17, "l":-25}
+                            },
+                            {
+                            "name":"Robert Hanson",
+                            "so":{"s":-9, "m":-18, "l":-26}
+                            }
+                        ]
+                }
+            ]
+        }
+]
+
+}

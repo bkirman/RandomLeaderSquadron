@@ -190,15 +190,20 @@
                     "year_start":1962,
                     "year_end":1972,
                     "so":{"s":-3, "m":-6, "l":-9},
-                    "pilots" : ["Arrow"]
-                },
-                {
-                    "name":"F-4 Phantom II (Elite+)",
-                    "force":"USAF",
-                    "year_start":1962,
-                    "year_end":1972,
-                    "so":{"s":-4, "m":-8, "l":-12},
-                    "pilots" : ["Chief","Nomad"]
+                    "pilots" : [
+                            {
+                            "name":"Arrow",
+                            "so":{"s":-3, "m":-6, "l":-9}
+                            },
+                            {
+                            "name":"Chief",
+                            "so":{"s":-4, "m":-8, "l":-12}
+                            },
+                            {
+                            "name":"Nomad",
+                            "so":{"s":-4, "m":-8, "l":-12}
+                            }
+                        ]
                 },
                 {
                     "name":"F-101 Voodoo (Elite)",

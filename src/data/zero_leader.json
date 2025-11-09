@@ -1,0 +1,516 @@
+{
+    "game_name":"Zero Leader",
+    "random_squadron_so" : {"s":6, "m":12, "l":18},
+    "squadron_ranks":{
+        "s":{"Newbie":1, "Green":2, "Average":4, "Skilled":1, "Veteran":0, "Legendary":0},
+        "m":{"Newbie":1, "Green":2, "Average":5, "Skilled":1, "Veteran":1, "Legendary":0},
+        "l":{"Newbie":1, "Green":2, "Average":6, "Skilled":2, "Veteran":1, "Legendary":0}
+    },
+    "squadron_ranks_years":{
+        "1941":{
+        "s":{"Newbie":1, "Green":2, "Average":3, "Skilled":1, "Veteran":1, "Legendary":0},
+        "m":{"Newbie":1, "Green":2, "Average":4, "Skilled":1, "Veteran":2, "Legendary":0},
+        "l":{"Newbie":1, "Green":2, "Average":5, "Skilled":2, "Veteran":2, "Legendary":0}
+    },
+        "1942":{
+        "s":{"Newbie":1, "Green":2, "Average":3, "Skilled":1, "Veteran":1, "Legendary":0},
+        "m":{"Newbie":1, "Green":2, "Average":4, "Skilled":1, "Veteran":2, "Legendary":0},
+        "l":{"Newbie":1, "Green":2, "Average":5, "Skilled":2, "Veteran":2, "Legendary":0}
+    },
+        "1943":{
+        "s":{"Newbie":1, "Green":2, "Average":4, "Skilled":1, "Veteran":0, "Legendary":0},
+        "m":{"Newbie":1, "Green":2, "Average":5, "Skilled":1, "Veteran":1, "Legendary":0},
+        "l":{"Newbie":1, "Green":2, "Average":6, "Skilled":2, "Veteran":1, "Legendary":0}
+    },
+        "1944":{
+        "s":{"Newbie":1, "Green":3, "Average":3, "Skilled":1, "Veteran":0, "Legendary":0},
+        "m":{"Newbie":1, "Green":3, "Average":4, "Skilled":1, "Veteran":1, "Legendary":0},
+        "l":{"Newbie":1, "Green":3, "Average":5, "Skilled":2, "Veteran":1, "Legendary":0}
+    },
+        "1945":{
+        "s":{"Newbie":1, "Green":3, "Average":3, "Skilled":1, "Veteran":0, "Legendary":0},
+        "m":{"Newbie":1, "Green":3, "Average":4, "Skilled":1, "Veteran":1, "Legendary":0},
+        "l":{"Newbie":1, "Green":3, "Average":5, "Skilled":2, "Veteran":1, "Legendary":0}
+    }
+    },
+    "sets" : [
+        {
+            "name": "Zero Leader",
+            "aircraft": [
+                {
+                    "name":"D3A1 Val",
+                    "force":"IJN / IJAAF",
+                    "year_start":1940,
+                    "year_end":1945,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Morita","Oyama","Shibata","Takahashi","Ueda","Ishikawa"]
+                },
+                {
+                    "name":"G3M Nell",
+                    "force":"IJN / IJAAF",
+                    "year_start":1940,
+                    "year_end":1943,
+                    "so":{"s":1, "m":2, "l":3},
+                    "pilots" : ["Sawada","Takarada","Kobayashi","Kisaki","Kumagai","Hoshina"]
+                },
+                {
+                    "name":"Ki-61 Tony",
+                    "force":"IJN / IJAAF",
+                    "year_start":1943,
+                    "year_end":1945,
+                    "so":{"s":-1, "m":-2, "l":-3},
+                    "pilots" : ["Sakami","Shiina","Shimizu","Hidaka","Murakami","Saito"]
+                },
+                {
+                    "name":"Ki-43 Oscar",
+                    "force":"IJN / IJAAF",
+                    "year_start":1939,
+                    "year_end":1945,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Aizawa","Eiro","Sakao","Hata","Izawa","Miura"]
+                },
+                {
+                    "name":"B5N2 Kate",
+                    "force":"IJN / IJAAF",
+                    "year_start":1939,
+                    "year_end":1945,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Nomura","Yamada","Harada","Naito","Miyamoto","Kondo"]
+                },
+                {
+                    "name":"Ki-51 Sonia",
+                    "force":"IJN / IJAAF",
+                    "year_start":1939,
+                    "year_end":1945,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Nakano","Ikeda","Matsui","Nakagawa","Noguchi","Goto"]
+                },
+                {
+                    "name":"Ki-84 Frank",
+                    "force":"IJN / IJAAF",
+                    "year_start":1944,
+                    "year_end":1945,
+                    "so":{"s":-1, "m":-2, "l":-3},
+                    "pilots" : ["Tachibana","Sawamura","Iwashita","Iro","Shimazaki","Kariya"]
+                },
+                {
+                    "name":"H8K Emily",
+                    "force":"IJN / IJAAF",
+                    "year_start":1942,
+                    "year_end":1945,
+                    "so":{"s":-2, "m":-4, "l":-6},
+                    "pilots" : ["Watabe","Okamoto","Ito","Kamijou","Otuska","Kawano"]
+                },
+                {
+                    "name":"N1KJ George",
+                    "force":"IJN / IJAAF",
+                    "year_start":1944,
+                    "year_end":1945,
+                    "so":{"s":-2, "m":-4, "l":-6},
+                    "pilots" : ["Deruita","Kikuchi","Sakamoto","Fujii","Arai","Shigo"]
+                },
+                {
+                    "name":"B6N Jill",
+                    "force":"IJN / IJAAF",
+                    "year_start":1944,
+                    "year_end":1945,
+                    "so":{"s":-1, "m":-2, "l":-3},
+                    "pilots" : ["Aoki","Ando","Yoshida","Fukuda","Ogawa","Endo"]
+                },
+                {
+                    "name":"Ki-44 Tojo",
+                    "force":"IJN / IJAAF",
+                    "year_start":1941,
+                    "year_end":1945,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Imamura","Hanwa","Takebe","Iwabuchi","Akita","Nikaido"]
+                },
+                {
+                    "name":"G4M Betty",
+                    "force":"IJN / IJAAF",
+                    "year_start":1941,
+                    "year_end":1945,
+                    "so":{"s":-1, "m":-2, "l":-3},
+                    "pilots" : ["Minase","Ichimura","Kimito","Maeda","Obuchi","Tokaji"]
+                },
+                {
+                    "name":"J2M Jack",
+                    "force":"IJN / IJAAF",
+                    "year_start":1943,
+                    "year_end":1945,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Tozawa","Fukuoka","Ishihara","Nishikawa","Kogawa","Hirao"]
+                },
+                {
+                    "name":"A6M5 Zeke",
+                    "force":"IJN / IJAAF",
+                    "year_start":1944,
+                    "year_end":1945,
+                    "so":{"s":-1, "m":-2, "l":-3},
+                    "pilots" : ["Ejima","Okura","Hatano","Nishino","Ibusuki","Oba","Futagami","Takeuchi","Yoshino","Tada","Hayashi","Shyu"]
+                },
+                {
+                    "name":"A6M2 Zero",
+                    "force":"IJN / IJAAF",
+                    "year_start":1940,
+                    "year_end":1945,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Matsuda","Ueno","Ichikawa","Hara","Inoue","Kuma","Sano","Imai","Chiba","Murata","Tamura","Yamazaki"]
+                }
+                
+            ]
+        },
+        {
+            "name": "China",
+            "aircraft": [
+               {
+                    "name":"Ki-27 Nate",
+                    "force":"IJN / IJAAF",
+                    "year_start":1939,
+                    "year_end":1943,
+                    "so":{"s":1, "m":2, "l":3},
+                    "pilots" : ["Agari","Matsunobu","Sakata","Michigami","Kozaki"]
+                },
+                {
+                    "name":"Ki-48 Lily",
+                    "force":"IJN / IJAAF",
+                    "year_start":1940,
+                    "year_end":1942,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Tsukishima","Ogami","Narumiya","Ishii","Chuujou"]
+                },
+                {
+                    "name":"A5M Claude",
+                    "force":"IJN / IJAAF",
+                    "year_start":1939,
+                    "year_end":1943,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Sasaki","Yamashita","Nishimura","Fujita","Kaneko"]
+                }
+            ]
+        },
+        {
+            "name": "Aces",
+            "aircraft": [
+                 {
+                    "name":"Ki-27 Nate (Ace)",
+                    "force":"IJN / IJAAF",
+                    "year_start":1939,
+                    "year_end":1943,
+                    "so":{"s":1, "m":2, "l":3},
+                    "pilots" : [
+                        {
+                            "name":"Shinohara",
+                            "so":{"s":-12, "m":-24, "l":-36}
+                            },
+                             {
+                            "name":"Eto",
+                            "so":{"s":-2, "m":-5, "l":-7}
+                            }
+                        ]
+                },
+                {
+                    "name":"D3A1 Val (Ace)",
+                    "force":"IJN / IJAAF",
+                    "year_start":1940,
+                    "year_end":1945,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : [{
+                            "name":"Egusa",
+                            "so":{"s":-7, "m":-14, "l":-21}
+                            }]
+                },
+                {
+                    "name":"G3M Nell (Ace)",
+                    "force":"IJN / IJAAF",
+                    "year_start":1940,
+                    "year_end":1943,
+                    "so":{"s":-8, "m":-16, "l":-24},
+                    "pilots" : ["Shima"]
+                },
+                {
+                    "name":"Ki-61 Tony (Ace)",
+                    "force":"IJN / IJAAF",
+                    "year_start":1943,
+                    "year_end":1945,
+                    "so":{"s":-1, "m":-2, "l":-3},
+                    "pilots" : [
+                            {
+                            "name":"Kashiide",
+                            "so":{"s":-6, "m":-13, "l":-19}
+                            },
+                            {
+                            "name":"Furugori",
+                            "so":{"s":-9, "m":-18, "l":-27}
+                            },
+                            {
+                            "name":"Onozaki",
+                            "so":{"s":-11, "m":-21, "l":-32}
+                            }
+                    ]
+                },
+                {
+                    "name":"Ki-43 Oscar (Ace)",
+                    "force":"IJN / IJAAF",
+                    "year_start":1939,
+                    "year_end":1945,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : [
+                            {
+                            "name":"Kato",
+                            "so":{"s":-7, "m":-14, "l":-22}
+                            },
+                            {
+                            "name":"Anabuki",
+                            "so":{"s":-13, "m":-26, "l":-39}
+                            },
+                            {
+                            "name":"Shibata",
+                            "so":{"s":-9, "m":-18, "l":-26}
+                            }
+                    ]
+                },
+                {
+                    "name":"A5M Claude (Ace)",
+                    "force":"IJN / IJAAF",
+                    "year_start":1939,
+                    "year_end":1943,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : [
+                            {
+                            "name":"Nango",
+                            "so":{"s":-2, "m":-5, "l":-7}
+                            },
+                            {
+                            "name":"Hidaka",
+                            "so":{"s":-1, "m":-2, "l":-2}
+                            }
+                    ]
+                },
+                {
+                    "name":"B5N Kate (Ace)",
+                    "force":"IJN / IJAAF",
+                    "year_start":1939,
+                    "year_end":1945,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : [{
+                            "name":"Fuchida",
+                            "so":{"s":-7, "m":-14, "l":-21}
+                            }]
+                },
+                {
+                    "name":"Ki-84 Frank (Ace)",
+                    "force":"IJN / IJAAF",
+                    "year_start":1944,
+                    "year_end":1945,
+                    "so":{"s":-1, "m":-2, "l":-3},
+                    "pilots" : [
+                        {
+                            "name":"Iwahashi",
+                            "so":{"s":-11, "m":-22, "l":-33}
+                            },
+                            {
+                            "name":"Koga",
+                            "so":{"s":-11, "m":-23, "l":-34}
+                            },
+                            {
+                            "name":"Ogawa",
+                            "so":{"s":-7, "m":-13, "l":-20}
+                            }
+                    ]
+                },
+                {
+                    "name":"H8K Emily (Ace)",
+                    "force":"IJN / IJAAF",
+                    "year_start":1942,
+                    "year_end":1945,
+                    "so":{"s":-5, "m":-11, "l":-16},
+                    "pilots" : ["Ono"]
+                },
+                {
+                    "name":"N1KJ George (Ace)",
+                    "force":"IJN / IJAAF",
+                    "year_start":1944,
+                    "year_end":1945,
+                    "so":{"s":-2, "m":-4, "l":-6},
+                    "pilots" : [
+                        {
+                            "name":"Muto",
+                            "so":{"s":-10, "m":-20, "l":-31}
+                            },
+                            {
+                            "name":"Matsuba",
+                            "so":{"s":-7, "m":-15, "l":-22}
+                            },
+                            {
+                            "name":"Yamamoto",
+                            "so":{"s":-7, "m":-14, "l":-20}
+                            },
+                            {
+                            "name":"Kanno",
+                            "so":{"s":-10, "m":-20, "l":-30}
+                            }
+                    ]
+                },
+                {
+                    "name":"Ki-44 Tojo (Ace)",
+                    "force":"IJN / IJAAF",
+                    "year_start":1941,
+                    "year_end":1945,
+                    "so":{"s":-5, "m":-9, "l":-14},
+                    "pilots" : ["Yoshida"]
+                },
+                {
+                    "name":"G4M Betty (Ace)",
+                    "force":"IJN / IJAAF",
+                    "year_start":1941,
+                    "year_end":1945,
+                    "so":{"s":-9, "m":-18, "l":-27},
+                    "pilots" : ["Aratani"]
+                },
+                {
+                    "name":"J2M Jack (Ace)",
+                    "force":"IJN / IJAAF",
+                    "year_start":1943,
+                    "year_end":1945,
+                    "so":{"s":-9, "m":-18, "l":-26},
+                    "pilots" : ["Akamatsu"]
+                },
+                {
+                    "name":"A6M5 Zeke (Ace)",
+                    "force":"IJN / IJAAF",
+                    "year_start":1944,
+                    "year_end":1945,
+                    "so":{"s":-1, "m":-2, "l":-3},
+                    "pilots" : [
+                            {
+                            "name":"Iwamoto",
+                            "so":{"s":-14, "m":-28, "l":-42}
+                            },
+                            {
+                            "name":"Komachi",
+                            "so":{"s":-7, "m":-14, "l":-22}
+                            },
+                            {
+                            "name":"Minami",
+                            "so":{"s":-3, "m":-6, "l":-8}
+                            },
+                            {
+                            "name":"Shiga",
+                            "so":{"s":-3, "m":-5, "l":-8}
+                            }
+
+                    ]
+                },
+                {
+                    "name":"A6M2 Zero (Ace)",
+                    "force":"IJN / IJAAF",
+                    "year_start":1940,
+                    "year_end":1945,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : [
+                            {
+                            "name":"Oda",
+                            "so":{"s":-2, "m":-3, "l":-5}
+                            },
+                            {
+                            "name":"Handa",
+                            "so":{"s":-2, "m":-3, "l":-5}
+                            },
+                            {
+                            "name":"Kodaira",
+                            "so":{"s":-2, "m":-4, "l":-6}
+                            },
+                            {
+                            "name":"Abe",
+                            "so":{"s":-2, "m":-4, "l":-6}
+                            },
+                            {
+                            "name":"Kaneko",
+                            "so":{"s":-2, "m":-4, "l":-7}
+                            },
+                            {
+                            "name":"Mori",
+                            "so":{"s":-3, "m":-5, "l":-8}
+                            },
+                            {
+                            "name":"Shimakawa",
+                            "so":{"s":-3, "m":-6, "l":-8}
+                            },
+                            {
+                            "name":"Yanagiya",
+                            "so":{"s":-3, "m":-6, "l":-10}
+                            },
+                            {
+                            "name":"Suzuki",
+                            "so":{"s":-3, "m":-6, "l":-9}
+                            },
+                            {
+                            "name":"Kudo",
+                            "so":{"s":-3, "m":-7, "l":-10}
+                            },
+                            {
+                            "name":"Fukui",
+                            "so":{"s":-3, "m":-7, "l":-10}
+                            },
+                            {
+                            "name":"Tsunoda",
+                            "so":{"s":-4, "m":-7, "l":-11}
+                            },
+                            {
+                            "name":"Kondo",
+                            "so":{"s":-4, "m":-7, "l":-11}
+                            },
+                            {
+                            "name":"Kashimura",
+                            "so":{"s":-4, "m":-7, "l":-11}
+                            },
+                            {
+                            "name":"Omori",
+                            "so":{"s":-4, "m":-8, "l":-13}
+                            },
+                            {
+                            "name":"Sasakibara",
+                            "so":{"s":-4, "m":-8, "l":-13}
+                            },
+                            {
+                            "name":"Mochizuki",
+                            "so":{"s":-5, "m":-10, "l":-15}
+                            },
+                            {
+                            "name":"Sasai",
+                            "so":{"s":-10, "m":-20, "l":-30}
+                            },
+                            {
+                            "name":"Okabe",
+                            "so":{"s":-6, "m":-12, "l":-18}
+                            },
+                            {
+                            "name":"Isozaki",
+                            "so":{"s":-6, "m":-12, "l":-18}
+                            },
+                            {
+                            "name":"Sakai",
+                            "so":{"s":-11, "m":-22, "l":-33}
+                            },
+                            {
+                            "name":"Ota",
+                            "so":{"s":-13, "m":-26, "l":-39}
+                            },
+                            {
+                            "name":"Okumura",
+                            "so":{"s":-13, "m":-26, "l":-39}
+                            },
+                            {
+                            "name":"Nishizawa",
+                            "so":{"s":-13, "m":-26, "l":-39}
+                            }
+                    ]
+                }
+                
+            ]
+        }
+        
+]
+
+}
