@@ -68,6 +68,7 @@ function gameSelected() {
     });
     
     document.getElementById("game").style.display = "none";
+    document.getElementById("info").style.display = "none";
     document.getElementById("expansions").style.display = "block";
 }
 
@@ -414,6 +415,7 @@ function restart() {
     document.getElementById("expansions").style.display = "none";
     document.getElementById("error").style.display = "none";
     document.getElementById("game").style.display = "block";
+    document.getElementById("info").style.display = "block";
 
     //clear all fieldsets
     document.querySelector('fieldset#expansion_options').innerHTML = "";
