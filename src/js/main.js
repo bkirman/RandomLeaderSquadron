@@ -16,11 +16,16 @@ var selectedForces = [];
 var selectedAircraft = [];
 var aircraftPool = [];
 var pilotPool = [];
+var acesPool = [];
+var acesCount = 0;
+var acesPilotPool = [];
 var ranks = {};
 var rulesSOs = 0
 var squadronSize = 0;
 var randomName = "Random Squadron";
 var selectAll = true;
+
+var acesByLength = {'s':1,'m':2,'l':3};
 
 function init() {
     document.querySelector('button#selected_game').addEventListener('click',gameSelected);
@@ -90,7 +95,7 @@ function expansionSelected() {
         if (set) {
             set.aircraft.forEach(aircraft => {
                 //If aircraft with this name is already in the pool, append pilots to the list
-                const existingAircraft = aircraftPool.find(a => a.name === aircraft.name && a.force === aircraft.force && a.year_start === aircraft.year_start);
+                const existingAircraft = aircraftPool.find(a => a.name === aircraft.name && a.force === aircraft.force && a.year_start === aircraft.year_start); //note year_start is because some aircraft have different year variants (e.g. P40 in CL)
                 if (existingAircraft) {
                     existingAircraft.pilots = existingAircraft.pilots.concat(aircraft.pilots);
                     return;
@@ -99,6 +104,19 @@ function expansionSelected() {
                 aircraftPool.push(aircraft);
                 }
             });
+            if (Object.hasOwn(set,"aces")){ //if this set has ace pilots, add them to the ace pool
+                set.aces.forEach(aircraft => {
+                    //If aircraft with this name is already in the pool, append pilots to the list
+                    const existingAircraft = acesPool.find(a => a.name === aircraft.name && a.force === aircraft.force && a.year_start === aircraft.year_start);
+                    if (existingAircraft) {
+                        existingAircraft.pilots = existingAircraft.pilots.concat(aircraft.pilots);
+                        return;
+                    }
+                    else{
+                    acesPool.push(aircraft);
+                    }
+                });
+            }
         }});
 
     squadronSize = Object.values(gameData.squadron_ranks['s']).reduce((a, b) => a + b, 0);
@@ -115,7 +133,7 @@ function expansionSelected() {
     var earliest = Math.min(...aircraftPool.map(aircraft => aircraft.year_start));
     var latest = Math.max(...aircraftPool.map(aircraft => aircraft.year_end));
     document.getElementById("year_input").value = earliest;
-    console.log(Math.max(...aircraftPool.map(aircraft => aircraft.year_end)).toString());
+    //console.log(Math.max(...aircraftPool.map(aircraft => aircraft.year_end)).toString());
     document.getElementById("year_min").textContent = earliest;
     document.getElementById("year_max").textContent = latest;
 
@@ -131,6 +149,13 @@ function yearSelected() {
         if (aircraft.year_start > selectedYear || aircraft.year_end < selectedYear) {
             console.log("Removing aircraft not available in year", selectedYear + ":", aircraft.name);
             aircraftPool.splice(i, 1);
+        }
+    }
+    for (let i = acesPool.length - 1; i >= 0; i--) {
+        const aircraft = acesPool[i];
+        if (aircraft.year_start > selectedYear || aircraft.year_end < selectedYear) {
+            console.log("Removing Ace aircraft not available in year", selectedYear + ":", aircraft.name);
+            acesPool.splice(i, 1);
         }
     }
     //console.log("Filtered aircraft pool:", aircraftPool);
@@ -226,9 +251,17 @@ function forcesSelected() {
             aircraftPool.splice(i, 1);
         }
     }
+    for (let i = acesPool.length - 1; i >= 0; i--) {
+        const aircraft = acesPool[i];
+        if (!selectedForces.includes(aircraft.force)) {
+            //console.log("Removing aircraft not in selected forces:", aircraft.name);
+            acesPool.splice(i, 1);
+        }
+    }
     
 
     console.log("Filtered aircraft pool after forces selection:", aircraftPool);
+    console.log("Filtered aces pool after forces selection:", acesPool);
     //populate aircraft options
     const fieldset = document.querySelector('fieldset#aircraft_options');
     fieldset.innerHTML = ""; //clear existing options
@@ -270,7 +303,7 @@ function aircraftSelected() {
     pilotPool = [];
     selectedAircraft.forEach(boxName => {
 
-        const aircraft = aircraftPool.find(a => a.name === boxName.split('$')[0] && a.force === boxName.split('$')[1]);
+        var aircraft = aircraftPool.find(a => a.name === boxName.split('$')[0] && a.force === boxName.split('$')[1]);
         if (aircraft) {
             aircraft.pilots.forEach(pilot => {
                 var pilotEntry = {pilot:pilot, aircraft:aircraft.name, force:aircraft.force, so:aircraft.so[selectedLength.charAt(0)]};
@@ -281,13 +314,30 @@ function aircraftSelected() {
                 pilotPool.push(pilotEntry);
             });
         }
+        aircraft = acesPool.find(a => a.name === boxName.split('$')[0] && a.force === boxName.split('$')[1]);
+        if (aircraft) {
+            aircraft.pilots.forEach(pilot => {
+                var pilotEntry = {pilot:pilot, aircraft:aircraft.name, force:aircraft.force, so:aircraft.so[selectedLength.charAt(0)]};
+                if(typeof pilotEntry.pilot == 'object') {//Aces, Elite pilots have different SO values than base aircraft.
+                    pilotEntry.so = pilotEntry.pilot.so[selectedLength.charAt(0)];
+                    pilotEntry.pilot = pilotEntry.pilot.name
+                }
+                acesPilotPool.push(pilotEntry);
+            });
+        }
     });
     console.log("Compiled pilot pool:", pilotPool);
+    console.log("Compiled ace pilot pool:", acesPilotPool);
 
     if (pilotPool.length < squadronSize) {
         document.getElementById("error").style.display = "block";
         document.getElementById("aircraft").style.display = "none";
         return;
+    }
+
+    //If there are ace pilots, adjust ranks
+    if (acesByLength[selectedLength.charAt(0)]<=acesPilotPool.length) {
+        ranks['Average'] = ranks['Average'] - acesByLength[selectedLength.charAt(0)];
     }
 
     //add a table row in results_table for each entry in data.squadron_ranks
@@ -347,6 +397,76 @@ function aircraftSelected() {
 
         resultsTableBody.appendChild(row);
     }}
+    //add aces
+    if(acesPilotPool.length>0){
+    for(let i = 0; i<acesByLength[selectedLength.charAt(0)];i++){
+        //select a random pilot from the pilot pool
+            const randomIndex = Math.floor(Math.random() * acesPilotPool.length);
+            const pilotEntry = acesPilotPool[randomIndex];
+
+            const row = document.createElement('tr');
+            const rankCell = document.createElement('td');
+            rankCell.textContent = "Ace";
+            rankCell.className = "ace_cell";
+            row.appendChild(rankCell);
+
+            const nameCell = document.createElement('td');
+            nameCell.textContent = pilotEntry.pilot;
+            nameCell.className = "pilot_name_cell";
+            row.appendChild(nameCell);
+
+            const aircraftCell = document.createElement('td');
+            aircraftCell.textContent = pilotEntry.aircraft;
+            aircraftCell.className = "aircraft_cell";
+            row.appendChild(aircraftCell);
+
+            const forceCell = document.createElement('td');
+            forceCell.textContent = pilotEntry.force;
+            forceCell.className = "force_cell";
+            row.appendChild(forceCell);
+
+            const soCell = document.createElement('td');
+            soCell.textContent = pilotEntry.so;
+            soCell.className = "so_cell";
+            row.appendChild(soCell);
+
+            //add a cell with a button to remove this pilot from the pool and regenerate the row
+            const actionCell = document.createElement('td');
+            actionCell.className = "action_cell";
+            const removeButton = document.createElement('span');
+            removeButton.textContent = "♠️";
+            removeButton.classList.add("reroll_button");
+            removeButton.addEventListener('click', () => {
+                if (acesPilotPool.length === 0) {
+                    alert("No more pilots available to select from!");
+                    return;
+                }
+                
+                //regenerate this row
+                regenerateAceRow(row);
+            });
+            const removeAceButton = document.createElement('span');
+            removeAceButton.textContent = "🧢";
+            removeAceButton.classList.add("reroll_button");
+            removeAceButton.addEventListener('click', () => {
+                if (pilotPool.length === 0) {
+                    alert("No more pilots available to select from!");
+                    return;
+                }
+                
+                //regenerate this row
+                regenerateAverageRow(row);
+            });
+            actionCell.appendChild(removeButton);
+            actionCell.appendChild(removeAceButton);
+            row.appendChild(actionCell);
+            acesPilotPool.splice(randomIndex, 1);
+        
+
+        resultsTableBody.appendChild(row);
+    }}
+
+
     generateTotalSO();
 
     document.getElementById("squadron_name").innerHTML = randomSquadronName;
@@ -370,6 +490,34 @@ function regenerateRow(row, rankKey) {
     pilotPool.splice(randomIndex, 1);
 
     generateTotalSO();
+}
+function regenerateAceRow(row) {
+    //select a random pilot from the pilot pool
+    const randomIndex = Math.floor(Math.random() * acesPilotPool.length);
+    const pilotEntry = acesPilotPool[randomIndex];
+
+    //update the row cells
+    row.cells[0].textContent = "Ace";
+    row.cells[0].className = "ace_cell";
+    
+    row.cells[1].textContent = pilotEntry.pilot;
+    row.cells[2].textContent = pilotEntry.aircraft;
+    row.cells[3].textContent = pilotEntry.force;
+    row.cells[4].textContent = pilotEntry.so;
+
+    //remove pilot from pool
+    acesPilotPool.splice(randomIndex, 1);
+
+    generateTotalSO();
+}
+
+function regenerateAverageRow(row) {
+    //horrible hacky function to remove an ace and replace with average pilot
+    row.cells[0].textContent = "Average";
+    row.cells[0].className = "average_cell";
+    
+    //row.cells[5].appendChild(removeButton);
+    regenerateRow(row);
 }
 
 function generateTotalSO() {
@@ -402,6 +550,8 @@ function restart() {
     selectedAircraft = [];
     aircraftPool = [];
     pilotPool = [];
+    acesPool = [];
+    acesPilotPool = [];
     ranks = {};
     rulesSOs = 0;
     squadronSize = 0;

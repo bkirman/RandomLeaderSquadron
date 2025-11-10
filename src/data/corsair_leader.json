@@ -169,10 +169,12 @@
                     "year_end":1945,
                     "so":{"s":0, "m":0, "l":0},
                     "pilots" : ["Kevin \"Puffy\" Caldwell","Scott \"Sticks\" Rowland","Charlie Field","Chris Severs","Robert E. Stacy","Alex Aguila","Aje \"Ronin\" Sakamoto","Matt Rider","Jose 'Josito' Garcia","Eric Gingrich","Leland \"Top\" Gilton","Figueroa","Kevin McCammon","Emery Gallant","Ed Schnettler","1st Lt. Derek \"12 Pack\" Case","Henry Achilles","Joe Harper","Frederic Rodriguez","Tom \"Madman\" Manley","Jacob Tan Jia En","Lee \"Madcartographer\" Smith","Dan Schul","Kurl \"Weasel\" Wasserman","Gutenkunst","Chuck \"Homer\" Turner","Russo Corbally","Dynamite Doug Wong"]
-                },
-                {
-                    "name":"F4U Corsair (Ace)",
-                    "force":"Air Volunteer Group",
+                }
+                
+            ],
+            "aces":[{
+                    "name":"F4U Corsair",
+                    "force":"USN / USMC",
                     "year_start":1943,
                     "year_end":1945,
                     "so":{"s":0, "m":0, "l":0},
@@ -180,15 +182,15 @@
                             "name":"\"Pappy\" Boyington",
                             "so":{"s":-10, "m":-20, "l":-30}
                             }]
-                }
-            ]
+                }]
         }
         ,{
             "name": "Aces",
-            "aircraft": [
+            "aircraft":[],
+            "aces": [
                 {
-                    "name":"TBD Devastator (Ace)",
-                    "force":"USN",
+                    "name":"TBD Devastator",
+                    "force":"USN / USMC",
                     "year_start":1941,
                     "year_end":1942,
                     "so":{"s":2, "m":4, "l":6},
@@ -205,8 +207,8 @@
                         ]
                 },
                 {
-                    "name":"SB2C Helldiver (Ace)",
-                    "force":"USN",
+                    "name":"SB2C Helldiver",
+                    "force":"USN / USMC",
                     "year_start":1943,
                     "year_end":1945,
                     "so":{"s":0, "m":0, "l":0},
@@ -226,7 +228,7 @@
                     ]
                 },
                 {
-                    "name":"P-40 Warhawk (Ace)",
+                    "name":"P-40 Warhawk",
                     "force":"USAAF",
                     "year_start":1941,
                     "year_end":1942,
@@ -259,7 +261,7 @@
                     ]
                 },
                 {
-                    "name":"P-40 Warhawk (Ace)",
+                    "name":"P-40 Warhawk",
                     "force":"USAAF",
                     "year_start":1943,
                     "year_end":1945,
@@ -292,7 +294,7 @@
                     ]
                 },
                 {
-                    "name":"P-38 Lightning (Ace)",
+                    "name":"P-38 Lightning",
                     "force":"USAAF",
                     "year_start":1943,
                     "year_end":1945,
@@ -317,8 +319,8 @@
                     ]
                 },
                 {
-                    "name":"SB2U Vindicator (Ace)",
-                    "force":"USN",
+                    "name":"SB2U Vindicator",
+                    "force":"USN / USMC",
                     "year_start":1941,
                     "year_end":1942,
                     "so":{"s":0, "m":0, "l":0},
@@ -328,8 +330,8 @@
                             }]
                 },
                 {
-                    "name":"SB2U Vindicator (Ace)",
-                    "force":"USMC",
+                    "name":"SB2U Vindicator",
+                    "force":"USN / USMC",
                     "year_start":1941,
                     "year_end":1942,
                     "so":{"s":0, "m":0, "l":0},
@@ -339,8 +341,8 @@
                             }]
                 },
                 {
-                    "name":"SBD Dauntless (Ace)",
-                    "force":"USN",
+                    "name":"SBD Dauntless",
+                    "force":"USN / USMC",
                     "year_start":1941,
                     "year_end":1944,
                     "so":{"s":0, "m":0, "l":0},
@@ -356,16 +358,7 @@
                             {
                             "name":"\"Dusty\" Kleiss",
                             "so":{"s":-9, "m":-19, "l":-28}
-                            }
-                    ]
-                },
-                {
-                    "name":"SBD Dauntless (Ace)",
-                    "force":"USMC",
-                    "year_start":1941,
-                    "year_end":1944,
-                    "so":{"s":0, "m":0, "l":0},
-                    "pilots" : [
+                            },
                             {
                             "name":"Daniel Iverson",
                             "so":{"s":-10, "m":-19, "l":-29}
@@ -381,8 +374,8 @@
                     ]
                 },
                 {
-                    "name":"F6F Hellcat (Ace)",
-                    "force":"USN",
+                    "name":"F6F Hellcat",
+                    "force":"USN / USMC",
                     "year_start":1943,
                     "year_end":1945,
                     "so":{"s":0, "m":0, "l":0},
@@ -414,8 +407,8 @@
                         ]
                 },
                 {
-                    "name":"F4U Corsair (Ace)",
-                    "force":"UK - Royal Naval Reserves",
+                    "name":"F4U Corsair",
+                    "force":"UK - FAA",
                     "year_start":1943,
                     "year_end":1945,
                     "so":{"s":0, "m":0, "l":0},
@@ -423,16 +416,7 @@
                             {
                             "name":"Don Sheppard",
                             "so":{"s":-2, "m":-4, "l":-6}
-                            }
-                        ]
-                },
-                {
-                    "name":"F4U Corsair (Ace)",
-                    "force":"UK - Royal Marines",
-                    "year_start":1943,
-                    "year_end":1945,
-                    "so":{"s":0, "m":0, "l":0},
-                    "pilots" : [
+                            },
                             {
                             "name":"Ronnie R.C. Hay",
                             "so":{"s":-2, "m":-4, "l":-6}
@@ -440,8 +424,8 @@
                         ]
                 },
                 {
-                    "name":"F4F Wildcat (Ace)",
-                    "force":"USN",
+                    "name":"F4F Wildcat",
+                    "force":"USN / USMC",
                     "year_start":1941,
                     "year_end":1942,
                     "so":{"s":0, "m":0, "l":0},
@@ -457,37 +441,7 @@
                             {
                             "name":"\"Butch\" O'Hare",
                             "so":{"s":-4, "m":-9, "l":-13}
-                            }
-                        ]
-                },
-                {
-                    "name":"F4F Wildcat (Ace)",
-                    "force":"USN",
-                    "year_start":1943,
-                    "year_end":1945,
-                    "so":{"s":0, "m":0, "l":0},
-                    "pilots" : [
-                            {
-                            "name":"Charles Stimpson",
-                            "so":{"s":-4, "m":-8, "l":-12}
                             },
-                            {
-                            "name":"\"Jimmy\" Thach",
-                            "so":{"s":-1, "m":-2, "l":-3}
-                            },
-                            {
-                            "name":"\"Butch\" O'Hare",
-                            "so":{"s":-2, "m":-5, "l":-7}
-                            }
-                        ]
-                },
-                {
-                    "name":"F4F Wildcat (Ace)",
-                    "force":"USMC",
-                    "year_start":1941,
-                    "year_end":1942,
-                    "so":{"s":0, "m":0, "l":0},
-                    "pilots" : [
                             {
                             "name":"Harold Bauer",
                             "so":{"s":-3, "m":-6, "l":-8}
@@ -511,37 +465,49 @@
                         ]
                 },
                 {
-                    "name":"F4F Wildcat (Ace)",
-                    "force":"USMC",
+                    "name":"F4F Wildcat",
+                    "force":"USN / USMC",
                     "year_start":1943,
                     "year_end":1945,
                     "so":{"s":0, "m":0, "l":0},
                     "pilots" : [
                             {
-                            "name":"Harold Bauer",
+                            "name":"Charles Stimpson",
+                            "so":{"s":-4, "m":-8, "l":-12}
+                            },
+                            {
+                            "name":"\"Jimmy\" Thach",
                             "so":{"s":-1, "m":-2, "l":-3}
                             },
                             {
-                            "name":"Robert Galer",
+                            "name":"\"Butch\" O'Hare",
                             "so":{"s":-2, "m":-5, "l":-7}
                             },
                             {
+                            "name":"Harold Bauer",
+                            "so":{"s":-3, "m":-6, "l":-8}
+                            },
+                            {
+                            "name":"Robert Galer",
+                            "so":{"s":-4, "m":-9, "l":-13}
+                            },
+                            {
                             "name":"Jeff Deblanc",
-                            "so":{"s":-2, "m":-3, "l":-5}
+                            "so":{"s":-4, "m":-7, "l":-11}
                             },
                             {
                             "name":"John Smith",
-                            "so":{"s":-4, "m":-8, "l":-13}
+                            "so":{"s":-6, "m":-12, "l":-19}
                             },
                             {
                             "name":"Joe Foss",
-                            "so":{"s":-8, "m":-15, "l":-23}
+                            "so":{"s":-10, "m":-19, "l":-29}
                             }
                         ]
                 },
                 {
-                    "name":"F4U Corsair (Ace)",
-                    "force":"USN",
+                    "name":"F4U Corsair",
+                    "force":"USN / USMC",
                     "year_start":1943,
                     "year_end":1945,
                     "so":{"s":0, "m":0, "l":0},
@@ -553,16 +519,7 @@
                             {
                             "name":"\"Tom\" Blackburn",
                             "so":{"s":-3, "m":-6, "l":-9}
-                            }
-                        ]
-                },
-                {
-                    "name":"F4U Corsair (Ace)",
-                    "force":"USMC",
-                    "year_start":1943,
-                    "year_end":1945,
-                    "so":{"s":0, "m":0, "l":0},
-                    "pilots" : [
+                            },
                             {
                             "name":"Henry McCartney",
                             "so":{"s":-2, "m":-4, "l":-6}

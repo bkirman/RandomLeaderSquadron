@@ -191,9 +191,10 @@
         },
         {
             "name": "Aces",
-            "aircraft": [
+            "aircraft":[],
+            "aces": [
                  {
-                    "name":"Ki-27 Nate (Ace)",
+                    "name":"Ki-27 Nate",
                     "force":"IJN / IJAAF",
                     "year_start":1939,
                     "year_end":1943,
@@ -210,7 +211,7 @@
                         ]
                 },
                 {
-                    "name":"D3A1 Val (Ace)",
+                    "name":"D3A1 Val",
                     "force":"IJN / IJAAF",
                     "year_start":1940,
                     "year_end":1945,
@@ -221,7 +222,7 @@
                             }]
                 },
                 {
-                    "name":"G3M Nell (Ace)",
+                    "name":"G3M Nell",
                     "force":"IJN / IJAAF",
                     "year_start":1940,
                     "year_end":1943,
@@ -229,7 +230,7 @@
                     "pilots" : ["Shima"]
                 },
                 {
-                    "name":"Ki-61 Tony (Ace)",
+                    "name":"Ki-61 Tony",
                     "force":"IJN / IJAAF",
                     "year_start":1943,
                     "year_end":1945,
@@ -250,7 +251,7 @@
                     ]
                 },
                 {
-                    "name":"Ki-43 Oscar (Ace)",
+                    "name":"Ki-43 Oscar",
                     "force":"IJN / IJAAF",
                     "year_start":1939,
                     "year_end":1945,
@@ -271,7 +272,7 @@
                     ]
                 },
                 {
-                    "name":"A5M Claude (Ace)",
+                    "name":"A5M Claude",
                     "force":"IJN / IJAAF",
                     "year_start":1939,
                     "year_end":1943,
@@ -288,7 +289,7 @@
                     ]
                 },
                 {
-                    "name":"B5N Kate (Ace)",
+                    "name":"B5N Kate",
                     "force":"IJN / IJAAF",
                     "year_start":1939,
                     "year_end":1945,
@@ -299,7 +300,7 @@
                             }]
                 },
                 {
-                    "name":"Ki-84 Frank (Ace)",
+                    "name":"Ki-84 Frank",
                     "force":"IJN / IJAAF",
                     "year_start":1944,
                     "year_end":1945,
@@ -320,7 +321,7 @@
                     ]
                 },
                 {
-                    "name":"H8K Emily (Ace)",
+                    "name":"H8K Emily",
                     "force":"IJN / IJAAF",
                     "year_start":1942,
                     "year_end":1945,
@@ -328,7 +329,7 @@
                     "pilots" : ["Ono"]
                 },
                 {
-                    "name":"N1KJ George (Ace)",
+                    "name":"N1KJ George",
                     "force":"IJN / IJAAF",
                     "year_start":1944,
                     "year_end":1945,
@@ -353,7 +354,7 @@
                     ]
                 },
                 {
-                    "name":"Ki-44 Tojo (Ace)",
+                    "name":"Ki-44 Tojo",
                     "force":"IJN / IJAAF",
                     "year_start":1941,
                     "year_end":1945,
@@ -361,7 +362,7 @@
                     "pilots" : ["Yoshida"]
                 },
                 {
-                    "name":"G4M Betty (Ace)",
+                    "name":"G4M Betty",
                     "force":"IJN / IJAAF",
                     "year_start":1941,
                     "year_end":1945,
@@ -369,7 +370,7 @@
                     "pilots" : ["Aratani"]
                 },
                 {
-                    "name":"J2M Jack (Ace)",
+                    "name":"J2M Jack",
                     "force":"IJN / IJAAF",
                     "year_start":1943,
                     "year_end":1945,
@@ -377,7 +378,7 @@
                     "pilots" : ["Akamatsu"]
                 },
                 {
-                    "name":"A6M5 Zeke (Ace)",
+                    "name":"A6M5 Zeke",
                     "force":"IJN / IJAAF",
                     "year_start":1944,
                     "year_end":1945,
@@ -403,7 +404,7 @@
                     ]
                 },
                 {
-                    "name":"A6M2 Zero (Ace)",
+                    "name":"A6M2 Zero",
                     "force":"IJN / IJAAF",
                     "year_start":1940,
                     "year_end":1945,

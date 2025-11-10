@@ -188,6 +188,12 @@ th {
     text-transform: uppercase;
     background-color: #000000;
 }
+.ace_cell {
+    font-size: small;
+    width: 4rem;
+    text-transform: uppercase;
+    background-color: #6d6d6d;
+}
 
 select {
     font-size: large;
