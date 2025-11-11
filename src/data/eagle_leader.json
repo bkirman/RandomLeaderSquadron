@@ -379,6 +379,70 @@
             ]
         },
         {
+            "name": "Expansion #6 - Aces",
+            "aircraft":[
+            ],
+            "aces":[
+                {
+                    "name":"F-111F Aardvark",
+                    "force":"USAF",
+                    "year_start":1967,
+                    "year_end":1996,
+                    "so":{"s":-3, "m":-6, "l":-9},
+                    "pilots" : ["Bunker","Pizarro","Cortez"]
+                },
+                {
+                    "name":"F-4G Wild Weasel V",
+                    "force":"USAF",
+                    "year_start":1978,
+                    "year_end":1996,
+                    "so":{"s":3, "m":6, "l":9},
+                    "pilots" : ["Brick","Youngster","Ivan","Golden"]
+                },
+                 {
+                    "name":"F-16 ADF",
+                    "force":"Air National Guard",
+                    "year_start":1989,
+                    "year_end":2007,
+                    "so":{"s":2, "m":4, "l":6},
+                    "pilots" : ["Claw", "Scotch","Torch","Pancho","Lasso","Steamer"]
+
+                },
+                {
+                    "name":"A-7D Corsair II",
+                    "force":"Air National Guard",
+                    "year_start":1970,
+                    "year_end":1991,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Pops", "Nacho","Hillbilly"]
+                },
+                {
+                    "name":"F-16C Fighting Falcon",
+                    "force":"USAF",
+                    "year_start":1978,
+                    "year_end":9999,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Nordo","Trigger","Wilbur","Yogi","Dog","Fingers","El Cid","Husker","Gail"]
+                },
+                {
+                    "name":"F-15C Eagle",
+                    "force":"USAF",
+                    "year_start":1976,
+                    "year_end":9999,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Logger","Muddy","Kimo","Abby","Spyro","Cherry","Tater","Mole","Hoser","Chevron","ET","Gigs","Vegas","Clue","Tonic","Coma","OP","JB","Cheese","Rico","Dutch"]
+                },
+                {
+                    "name":"F-15E Strike Eagle",
+                    "force":"USAF",
+                    "year_start":1989,
+                    "year_end":9999,
+                    "so":{"s":-4, "m":-8, "l":-12},
+                    "pilots" : ["TB","Chewie","Smack","DZ","Apple","Beetle","Scoreboard","Bundy"]
+                }
+            ]
+        },
+        {
             "name": "Expansion #7 - Experimental Aircraft",
             "aircraft": [
                 {
