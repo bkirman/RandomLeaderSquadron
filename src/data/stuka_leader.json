@@ -1,0 +1,753 @@
+{
+    "game_name":"Stuka Leader",
+    "random_squadron_so" : {"s":6, "m":12, "l":18},
+    "squadron_ranks":{
+        "s":{"Newbie":0, "Green":1, "Average":2, "Skilled":4, "Veteran":1, "Legendary":0},
+        "m":{"Newbie":0, "Green":1, "Average":2, "Skilled":5, "Veteran":1, "Legendary":1},
+        "l":{"Newbie":0, "Green":1, "Average":2, "Skilled":6, "Veteran":2, "Legendary":1}
+    },
+    "squadron_ranks_years":{
+        "1936":{
+        "s":{"Newbie":1, "Green":2, "Average":3, "Skilled":1, "Veteran":1, "Legendary":0},
+        "m":{"Newbie":1, "Green":2, "Average":4, "Skilled":1, "Veteran":2, "Legendary":0},
+        "l":{"Newbie":1, "Green":2, "Average":5, "Skilled":2, "Veteran":2, "Legendary":0}
+    },
+    "1937":{
+        "s":{"Newbie":1, "Green":2, "Average":3, "Skilled":1, "Veteran":1, "Legendary":0},
+        "m":{"Newbie":1, "Green":2, "Average":4, "Skilled":1, "Veteran":2, "Legendary":0},
+        "l":{"Newbie":1, "Green":2, "Average":5, "Skilled":2, "Veteran":2, "Legendary":0}
+    },
+    "1938":{
+        "s":{"Newbie":1, "Green":2, "Average":3, "Skilled":1, "Veteran":1, "Legendary":0},
+        "m":{"Newbie":1, "Green":2, "Average":4, "Skilled":1, "Veteran":2, "Legendary":0},
+        "l":{"Newbie":1, "Green":2, "Average":5, "Skilled":2, "Veteran":2, "Legendary":0}
+    },
+    "1939":{
+        "s":{"Newbie":1, "Green":2, "Average":3, "Skilled":1, "Veteran":1, "Legendary":0},
+        "m":{"Newbie":1, "Green":2, "Average":4, "Skilled":1, "Veteran":2, "Legendary":0},
+        "l":{"Newbie":1, "Green":2, "Average":5, "Skilled":2, "Veteran":2, "Legendary":0}
+    },
+    "1940":{
+        "s":{"Newbie":1, "Green":2, "Average":3, "Skilled":1, "Veteran":1, "Legendary":0},
+        "m":{"Newbie":1, "Green":2, "Average":4, "Skilled":1, "Veteran":2, "Legendary":0},
+        "l":{"Newbie":1, "Green":2, "Average":5, "Skilled":2, "Veteran":2, "Legendary":0}
+    },
+        "1941":{
+        "s":{"Newbie":1, "Green":2, "Average":3, "Skilled":1, "Veteran":1, "Legendary":0},
+        "m":{"Newbie":1, "Green":2, "Average":4, "Skilled":1, "Veteran":2, "Legendary":0},
+        "l":{"Newbie":1, "Green":2, "Average":5, "Skilled":2, "Veteran":2, "Legendary":0}
+    },
+        "1942":{
+        "s":{"Newbie":1, "Green":2, "Average":4, "Skilled":1, "Veteran":0, "Legendary":0},
+        "m":{"Newbie":1, "Green":2, "Average":5, "Skilled":1, "Veteran":1, "Legendary":0},
+        "l":{"Newbie":1, "Green":2, "Average":6, "Skilled":2, "Veteran":1, "Legendary":0}
+    },
+        "1943":{
+        "s":{"Newbie":1, "Green":2, "Average":4, "Skilled":1, "Veteran":0, "Legendary":0},
+        "m":{"Newbie":1, "Green":2, "Average":5, "Skilled":1, "Veteran":1, "Legendary":0},
+        "l":{"Newbie":1, "Green":2, "Average":6, "Skilled":2, "Veteran":1, "Legendary":0}
+    },
+        "1944":{
+        "s":{"Newbie":1, "Green":3, "Average":3, "Skilled":1, "Veteran":0, "Legendary":0},
+        "m":{"Newbie":1, "Green":3, "Average":4, "Skilled":1, "Veteran":1, "Legendary":0},
+        "l":{"Newbie":1, "Green":3, "Average":5, "Skilled":2, "Veteran":1, "Legendary":0}
+    },
+        "1945":{
+        "s":{"Newbie":1, "Green":3, "Average":3, "Skilled":1, "Veteran":0, "Legendary":0},
+        "m":{"Newbie":1, "Green":3, "Average":4, "Skilled":1, "Veteran":1, "Legendary":0},
+        "l":{"Newbie":1, "Green":3, "Average":5, "Skilled":2, "Veteran":1, "Legendary":0}
+    },
+    "1946":{
+        "s":{"Newbie":0, "Green":1, "Average":2, "Skilled":4, "Veteran":1, "Legendary":0},
+        "m":{"Newbie":0, "Green":1, "Average":2, "Skilled":5, "Veteran":1, "Legendary":1},
+        "l":{"Newbie":0, "Green":1, "Average":2, "Skilled":6, "Veteran":2, "Legendary":1}
+    }
+    },
+    "sets" : [
+        {
+            "name": "Stuka Leader",
+            "aircraft": [
+                {
+                    "name":"FW-190a5",
+                    "force":"Luftwaffe",
+                    "year_start":1941,
+                    "year_end":1945,
+                    "so":{"s":-1, "m":-2, "l":-3},
+                    "pilots" : ["Voigt","Krüger","Pfeiffer","Sprecher","Lutz","Buehler","Henion","Schmidt"]
+                },
+                {
+                    "name":"FW-190a-8",
+                    "force":"Luftwaffe",
+                    "year_start":1944,
+                    "year_end":1945,
+                    "so":{"s":-2, "m":-3, "l":-4},
+                    "pilots" : ["Winter","DeRuyter","Weitze","Faber","Wagner","Huber"]
+                },
+                {
+                    "name":"He-162",
+                    "force":"Luftwaffe",
+                    "year_start":1945,
+                    "year_end":1945,
+                    "so":{"s":2, "m":3, "l":4},
+                    "pilots" : ["Klumpers","Kessler","Albrecht"]
+                },
+                {
+                    "name":"Ju-88",
+                    "force":"Luftwaffe",
+                    "year_start":1940,
+                    "year_end":1945,
+                    "so":{"s":-2, "m":-3, "l":-4},
+                    "pilots" : ["Reichleitner","Bitterlich","Birnbaum"]
+                },
+                {
+                    "name":"He-111",
+                    "force":"Luftwaffe",
+                    "year_start":1939,
+                    "year_end":1945,
+                    "so":{"s":-1, "m":-2, "l":-3},
+                    "pilots" : ["Drexler","Liebermann","Rosmanitsch"]
+                },
+                {
+                    "name":"Do-17",
+                    "force":"Luftwaffe",
+                    "year_start":1939,
+                    "year_end":1942,
+                    "so":{"s":-1, "m":-2, "l":-3},
+                    "pilots" : ["Lauber","Kreb","Mannheimer","Flügel"]
+                },
+                {
+                    "name":"Me-110",
+                    "force":"Luftwaffe",
+                    "year_start":1939,
+                    "year_end":1945,
+                    "so":{"s":-2, "m":-3, "l":-4},
+                    "pilots" : ["Hauff","Hecht","Muntefering","Krautner","Thomas","Sperling","Von Bingen"]
+                },
+                {
+                    "name":"Ju-87d",
+                    "force":"Luftwaffe",
+                    "year_start":1939,
+                    "year_end":1943,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Steinbacher","Klein","Heirmeyer","Herrmann","Puffer","Lange","Escherich","Hoehman"]
+                },
+                {
+                    "name":"Me-109e",
+                    "force":"Luftwaffe",
+                    "year_start":1939,
+                    "year_end":1943,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Jung","Gruber","Hofmann","Bleich","Heidler","Richter","Koch","Von Konczal","Broeker","Schneider","Mueller","Michaelis"]
+                },
+                {
+                    "name":"Me-262",
+                    "force":"Luftwaffe",
+                    "year_start":1944,
+                    "year_end":1945,
+                    "so":{"s":-4, "m":-6, "l":-8},
+                    "pilots" : ["Kaufmann","Reh","Grothe","Bossler","Schwester","Hultenschmidt","Von Grimm","Winkler","Hahn"]
+                },
+                {
+                    "name":"Me-109g",
+                    "force":"Luftwaffe",
+                    "year_start":1943,
+                    "year_end":1945,
+                    "so":{"s":-1, "m":-2, "l":-3},
+                    "pilots" : ["Riffel","Pretsch","Wolf","Brünner","Fischer","König","Aust"]
+                },
+                {
+                    "name":"Me-410",
+                    "force":"Luftwaffe",
+                    "year_start":1943,
+                    "year_end":1945,
+                    "so":{"s":-1, "m":-2, "l":-3},
+                    "pilots" : ["Straub","Liepold","Sundermeir","Schuhmacher","Protz","Harig"]
+                },
+                {
+                    "name":"Me-163",
+                    "force":"Luftwaffe",
+                    "year_start":1944,
+                    "year_end":1945,
+                    "so":{"s":3, "m":4, "l":5},
+                    "pilots" : ["Busch","Fuhry","Dreyfuss"]
+                },
+                {
+                    "name":"Ta-152",
+                    "force":"Luftwaffe",
+                    "year_start":1944,
+                    "year_end":1945,
+                    "so":{"s":3, "m":4, "l":5},
+                    "pilots" : ["Fuchs","Pohl","Graf","Schäfer","Dietrich","Sauer"]
+                }
+            ]
+        },
+        {
+            "name": "Exp #1: Eastern Front #1",
+            "aircraft": [
+                {
+                    "name":"Fw-190d",
+                    "force":"Luftwaffe",
+                    "year_start":1943,
+                    "year_end":1945,
+                    "so":{"s":-1, "m":-2, "l":-3},
+                    "pilots" : ["Ulbricht","Lippert","Schroeder","Löwen","Schön","Kreuder","Gimpel","Schnittker"]
+                },
+                {
+                    "name":"Hs-129",
+                    "force":"Luftwaffe",
+                    "year_start":1942,
+                    "year_end":1945,
+                    "so":{"s":-1, "m":-2, "l":-3},
+                    "pilots" : ["Reinhold","Thelen","Wildt","Vollrath","Kaner","Geerdtz","Drücker","Scholl"]
+                }
+            ]
+        },
+        {
+            "name": "Exp #2: Eastern Front #2",
+            "aircraft": [
+                {
+                    "name":"Ju-87g",
+                    "force":"Luftwaffe",
+                    "year_start":1943,
+                    "year_end":1945,
+                    "so":{"s":-1, "m":-2, "l":-3},
+                    "pilots" : ["Heydel","Frank","Wentle","Oberländer","Einlauf","Coogler","Kuensberg","Warzinger"]
+                },
+                {
+                    "name":"Do-335",
+                    "force":"Luftwaffe",
+                    "year_start":1944,
+                    "year_end":1945,
+                    "so":{"s":-2, "m":-3, "l":-4},
+                    "pilots" : ["Neef","Krieger","Mannschott","Reuter","Wasserman","Bach","Heß","Niemeyer"]
+                }
+            ]
+        },
+        {
+            "name": "Exp #3: Mediterranean #1",
+            "aircraft": [
+               
+                {
+                    "name":"MC-202",
+                    "force":"Regia Aeronautica Italiana",
+                    "year_start":1940,
+                    "year_end":1943,
+                    "so":{"s":-1, "m":-2, "l":-3},
+                    "pilots" : ["Nudi","Juliano","Zaccardi","Cozza","Pellegrini"]
+                },
+                {
+                    "name":"CR-42",
+                    "force":"Regia Aeronautica Italiana",
+                    "year_start":1940,
+                    "year_end":1943,
+                    "so":{"s":-2, "m":-3, "l":-4},
+                    "pilots" : ["Maraldo","Fabbio","Emmanuele","Neparoli","Giordano","Yovino"]
+                },
+                {
+                    "name":"SM-79",
+                    "force":"Regia Aeronautica Italiana",
+                    "year_start":1940,
+                    "year_end":1945,
+                    "so":{"s":-1, "m":-2, "l":-3},
+                    "pilots" : ["Ciccarella","DiCiacca","Guido","Yaconello","Frabotta","Herrari"]
+                }
+            ]
+        },
+        {
+            "name": "Exp #4: Mediterranean #2",
+            "aircraft": [
+               
+                {
+                    "name":"Do-217",
+                    "force":"Luftwaffe",
+                    "year_start":1941,
+                    "year_end":1945,
+                    "so":{"s":-2, "m":-3, "l":-4},
+                    "pilots" : ["Nero","Gabaldi","Zaita","Luca","Fittipaldi"]
+                },
+                {
+                    "name":"Me-109f",
+                    "force":"Luftwaffe",
+                    "year_start":1941,
+                    "year_end":1943,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : ["Bismarck","Eberhardt","Papaianni","Gresser","Eccellente","Humpf"]
+                },
+                {
+                    "name":"Re-2001",
+                    "force":"Regia Aeronautica Italiana",
+                    "year_start":1941,
+                    "year_end":1943,
+                    "so":{"s":2, "m":3, "l":4},
+                    "pilots" : ["Wuotto","Giannelli","Wentarmini","Macaione","Asaro","Zacchino"]
+                }
+            ]
+        },
+        {
+            "name": "Exp #5: Spanish Civil War",
+            "aircraft": [
+               
+                {
+                    "name":"Hs-123",
+                    "force":"Luftwaffe",
+                    "year_start":1936,
+                    "year_end":1939,
+                    "so":{"s":-2, "m":-3, "l":-4},
+                    "pilots" : ["Loos","Jungling","Käsbier","Jost","Azinger","Wunsch"]
+                },
+                {
+                    "name":"Ju-86",
+                    "force":"Luftwaffe",
+                    "year_start":1936,
+                    "year_end":1939,
+                    "so":{"s":2, "m":3, "l":4},
+                    "pilots" : ["Aschenbrenner","Schieber","Weidel","Loeber","Von Bergen"]
+                },
+                {
+                    "name":"He-51",
+                    "force":"Luftwaffe",
+                    "year_start":1936,
+                    "year_end":1939,
+                    "so":{"s":2, "m":3, "l":4},
+                    "pilots" : ["Vorphal","Hentschel","Maaß","Bosch","Leuchter","Mostaler"]
+                }
+            ]
+        },
+        {
+            "name": "Exp #6: What If...",
+            "aircraft": [
+               
+                {
+                    "name":"Ar-234",
+                    "force":"Luftwaffe",
+                    "year_start":1944,
+                    "year_end":9999,
+                    "so":{"s":-3, "m":-4, "l":-5},
+                    "pilots" : ["Ebener","Tausend","Hüpper","Seifert"]
+                },
+                {
+                    "name":"Ho-229",
+                    "force":"Luftwaffe",
+                    "year_start":1945,
+                    "year_end":9999,
+                    "so":{"s":-5, "m":-7, "l":-9},
+                    "pilots" : ["Sippel","Lenz","Handrich","Klett"]
+                },
+                {
+                    "name":"Ta-183",
+                    "force":"Luftwaffe",
+                    "year_start":1945,
+                    "year_end":9999,
+                    "so":{"s":-3, "m":-4, "l":-5},
+                    "pilots" : ["Egbert","Burghart","Wickert","Glöde"]
+                },
+                {
+                    "name":"E-555",
+                    "force":"Luftwaffe",
+                    "year_start":1945,
+                    "year_end":9999,
+                    "so":{"s":-4, "m":-6, "l":-8},
+                    "pilots" : ["Späth","Greuel","Lehn","Flasch","Schraut"]
+                }
+            ]
+        },
+        {
+            "name": "Exp #7: Aces",
+            "aircraft":[],
+            "aces": [
+
+                {
+                    "name":"Hs-123",
+                    "force":"Luftwaffe",
+                    "year_start":1936,
+                    "year_end":1939,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : [{
+                            "name":"Weiß",
+                            "so":{"s":-11, "m":-22, "l":-33}
+                            }]
+                },
+                {
+                    "name":"FW-190a",
+                    "force":"Luftwaffe",
+                    "year_start":1943,
+                    "year_end":1945,
+                    "so":{"s":-1, "m":-2, "l":-3},
+                    "pilots" : [{
+                            "name":"Ademeit",
+                            "so":{"s":-11, "m":-22, "l":-33}
+                            },
+                            {
+                            "name":"Tanzer",
+                            "so":{"s":-8, "m":-16, "l":-24}
+                            },
+                            {
+                            "name":"Lang",
+                            "so":{"s":-11, "m":-22, "l":-33}
+                            }]
+                },
+                 {
+                    "name":"Fw-190d",
+                    "force":"Luftwaffe",
+                    "year_start":1943,
+                    "year_end":1945,
+                    "so":{"s":-1, "m":-2, "l":-3},
+                    "pilots" : [{
+                            "name":"Kirschner",
+                            "so":{"s":-4, "m":-9, "l":-13}
+                            },
+                            {
+                            "name":"Lucas",
+                            "so":{"s":-11, "m":-22, "l":-33}
+                            }]
+                },
+                {
+                    "name":"FW-190a-8",
+                    "force":"Luftwaffe",
+                    "year_start":1944,
+                    "year_end":1945,
+                    "so":{"s":-2, "m":-3, "l":-4},
+                    "pilots" : [{
+                            "name":"Hackl",
+                            "so":{"s":-11, "m":-22, "l":-33}
+                            },
+                            {
+                            "name":"Müller",
+                            "so":{"s":-8, "m":-16, "l":-24}
+                            },
+                            {
+                            "name":"Zwesken",
+                            "so":{"s":-11, "m":-22, "l":-33}
+                            }]
+                },
+                {
+                    "name":"He-162",
+                    "force":"Luftwaffe",
+                    "year_start":1945,
+                    "year_end":1945,
+                    "so":{"s":2, "m":3, "l":4},
+                    "pilots" : [{
+                            "name":"Späte",
+                            "so":{"s":-5, "m":-10, "l":-16}
+                            }]
+                },
+                {
+                    "name":"Hs-129",
+                    "force":"Luftwaffe",
+                    "year_start":1942,
+                    "year_end":1945,
+                    "so":{"s":-1, "m":-2, "l":-3},
+                    "pilots" : [{
+                            "name":"Menapace",
+                            "so":{"s":-11, "m":-22, "l":-33}
+                            },
+                            {
+                            "name":"Dörffel",
+                            "so":{"s":-11, "m":-22, "l":-33}
+                            }]
+                },
+                {
+                    "name":"Ju-88",
+                    "force":"Luftwaffe",
+                    "year_start":1940,
+                    "year_end":1945,
+                    "so":{"s":-5, "m":-10, "l":-16},
+                    "pilots" : ["Baumbach"]
+                },
+                {
+                    "name":"He-111",
+                    "force":"Luftwaffe",
+                    "year_start":1939,
+                    "year_end":1945,
+                    "so":{"s":-5, "m":-10, "l":-16},
+                    "pilots" : ["Peltz"]
+                },
+                {
+                    "name":"Do-17",
+                    "force":"Luftwaffe",
+                    "year_start":1939,
+                    "year_end":1942,
+                    "so":{"s":-9, "m":-16, "l":-24},
+                    "pilots" : ["von Moreau"]
+                },
+                {
+                    "name":"Me-110",
+                    "force":"Luftwaffe",
+                    "year_start":1939,
+                    "year_end":1945,
+                    "so":{"s":-2, "m":-3, "l":-4},
+                    "pilots" : [{
+                            "name":"Jabs",
+                            "so":{"s":-8, "m":-16, "l":-24}
+                            },
+                            {
+                            "name":"Spies",
+                            "so":{"s":-11, "m":-22, "l":-33}
+                            }]
+                },
+                {
+                    "name":"Ju-87d",
+                    "force":"Luftwaffe",
+                    "year_start":1939,
+                    "year_end":1943,
+                    "so":{"s":-4, "m":-9, "l":-13},
+                    "pilots" : ["Cenni"]
+                },
+                {
+                    "name":"Me-109e",
+                    "force":"Luftwaffe",
+                    "year_start":1939,
+                    "year_end":1943,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : [
+                            {
+                            "name":"Gallowitsch",
+                            "so":{"s":-6, "m":-12, "l":-18}
+                            },
+                            {
+                            "name":"Hartmann",
+                            "so":{"s":-11, "m":-22, "l":-33}
+                            },
+                            {
+                            "name":"Rudorffer",
+                            "so":{"s":-10, "m":-20, "l":-30}
+                            },
+                            {
+                            "name":"Marseille",
+                            "so":{"s":-11, "m":-22, "l":-33}
+                            },
+                            {
+                            "name":"Wurmheller",
+                            "so":{"s":-8, "m":-16, "l":-24}
+                            },
+                            {
+                            "name":"Bär",
+                            "so":{"s":-8, "m":-16, "l":-24}
+                            }
+                        ]
+                },
+                {
+                    "name":"Me-262",
+                    "force":"Luftwaffe",
+                    "year_start":1944,
+                    "year_end":1945,
+                    "so":{"s":-4, "m":-6, "l":-8},
+                    "pilots" : [{
+                            "name":"Ehrler",
+                            "so":{"s":-11, "m":-22, "l":-33}
+                            },
+                            {
+                            "name":"Nowotny",
+                            "so":{"s":-11, "m":-22, "l":-33}
+                            },
+                            {
+                            "name":"Lützow",
+                            "so":{"s":-8, "m":-16, "l":-24}
+                            }]
+                },
+                {
+                    "name":"Ju-87g",
+                    "force":"Luftwaffe",
+                    "year_start":1943,
+                    "year_end":1945,
+                    "so":{"s":-11, "m":-22, "l":-33},
+                    "pilots" : ["Rudel"]
+                },
+                {
+                    "name":"Me-109f",
+                    "force":"Luftwaffe",
+                    "year_start":1941,
+                    "year_end":1943,
+                    "so":{"s":0, "m":0, "l":0},
+                    "pilots" : [
+                        {
+                            "name":"Mölders",
+                            "so":{"s":-5, "m":-10, "l":-16}
+                            },
+                            {
+                            "name":"Brändle",
+                            "so":{"s":-11, "m":-22, "l":-33}
+                            },
+                            {
+                            "name":"Beerenbrock",
+                            "so":{"s":-8, "m":-15, "l":-23}
+                            },
+                            {
+                            "name":"Galland",
+                            "so":{"s":-5, "m":-10, "l":-16}
+                            },
+                            {
+                            "name":"Crinius",
+                            "so":{"s":-9, "m":-18, "l":-27}
+                            }
+                    ]
+                },
+                {
+                    "name":"Me-109g",
+                    "force":"Luftwaffe",
+                    "year_start":1943,
+                    "year_end":1945,
+                    "so":{"s":-1, "m":-2, "l":-3},
+                    "pilots" : [{
+                            "name":"Von Rettberg",
+                            "so":{"s":-9, "m":-18, "l":-27}
+                            },
+                            {
+                            "name":"\"Pips\" Priller",
+                            "so":{"s":-8, "m":-15, "l":-23}
+                            },
+                            {
+                            "name":"Graf",
+                            "so":{"s":-11, "m":-22, "l":-33}
+                            },
+                            {
+                            "name":"Barkhorn",
+                            "so":{"s":-11, "m":-22, "l":-33}
+                            }
+                        ]
+                },
+                 {
+                    "name":"Ju-86",
+                    "force":"Luftwaffe",
+                    "year_start":1936,
+                    "year_end":1939,
+                    "so":{"s":-4, "m":-9, "l":-13},
+                    "pilots" : ["Jäger"]
+                },
+                {
+                    "name":"Me-410",
+                    "force":"Luftwaffe",
+                    "year_start":1943,
+                    "year_end":1945,
+                    "so":{"s":-1, "m":-2, "l":-3},
+                    "pilots" : [
+                        {
+                            "name":"Tratt",
+                            "so":{"s":-6, "m":-11, "l":-17}
+                            },
+                            {
+                            "name":"Bachnick",
+                            "so":{"s":-9, "m":-18, "l":-27}
+                            }
+                    ]
+                },
+                {
+                    "name":"Me-163",
+                    "force":"Luftwaffe",
+                    "year_start":1944,
+                    "year_end":1945,
+                    "so":{"s":-5, "m":-10, "l":-16},
+                    "pilots" : ["Ihlefeld"]
+                },
+                 {
+                    "name":"MC-202",
+                    "force":"Regia Aeronautica Italiana",
+                    "year_start":1940,
+                    "year_end":1943,
+                    "so":{"s":-1, "m":-2, "l":-3},
+                    "pilots" : [
+                        {
+                            "name":"Martinoli",
+                            "so":{"s":-11, "m":-22, "l":-33}
+                            },
+                            {
+                            "name":"Giannella",
+                            "so":{"s":-4, "m":-9, "l":-13}
+                            },
+                            {
+                            "name":"Ferrulli",
+                            "so":{"s":-8, "m":-16, "l":-24}
+                            }
+                    ]
+                },
+                {
+                    "name":"CR-42",
+                    "force":"Regia Aeronautica Italiana",
+                    "year_start":1940,
+                    "year_end":1943,
+                    "so":{"s":-2, "m":-3, "l":-4},
+                    "pilots" : [
+                        {
+                            "name":"Fibbia",
+                            "so":{"s":-11, "m":-22, "l":-33}
+                            },
+                            {
+                            "name":"Bordoni",
+                            "so":{"s":-7, "m":-10, "l":-16}
+                            }
+                    ]
+                },
+                {
+                    "name":"He-51",
+                    "force":"Luftwaffe",
+                    "year_start":1936,
+                    "year_end":1939,
+                    "so":{"s":2, "m":3, "l":4},
+                    "pilots" : [
+                         {
+                            "name":"Fözö",
+                            "so":{"s":-8, "m":-16, "l":-24}
+                            },
+                            {
+                            "name":"Pingel",
+                            "so":{"s":-4, "m":-9, "l":-13}
+                            }
+                    ]
+                },
+                {
+                    "name":"Re-2001",
+                    "force":"Regia Aeronautica Italiana",
+                    "year_start":1941,
+                    "year_end":1943,
+                    "so":{"s":2, "m":3, "l":4},
+                    "pilots" : [
+                         {
+                            "name":"Visentin",
+                            "so":{"s":-8, "m":-16, "l":-24}
+                            },
+                            {
+                            "name":"Solaro",
+                            "so":{"s":-4, "m":-9, "l":-13}
+                            }
+                    ]
+                },
+                {
+                    "name":"Ta-152",
+                    "force":"Luftwaffe",
+                    "year_start":1944,
+                    "year_end":1945,
+                    "so":{"s":3, "m":4, "l":5},
+                    "pilots" : [
+                         {
+                            "name":"Rademacher",
+                            "so":{"s":-8, "m":-16, "l":-24}
+                            },
+                            {
+                            "name":"Reschke",
+                            "so":{"s":-10, "m":-20, "l":-30}
+                            }
+                    ]
+                },
+                {
+                    "name":"SM-79",
+                    "force":"Regia Aeronautica Italiana",
+                    "year_start":1940,
+                    "year_end":1945,
+                    "so":{"s":-7, "m":-13, "l":-20},
+                    "pilots" : ["Buscaglia"]
+                },
+                {
+                    "name":"Do-335",
+                    "force":"Luftwaffe",
+                    "year_start":1944,
+                    "year_end":1945,
+                    "so":{"s":-8, "m":-16, "l":-24},
+                    "pilots" : ["Dieterle"]
+                }
+            
+            ]
+        }
+        
+]
+
+}
